@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Dec 21 23:09:18 2016
+
+@author: Selma
+"""
+import sys
+
+def derivative_sequence(numlist, order):
+    new_list = []
+    if order == 0:
+        return numlist
+    else:
+        for i in range(len(numlist)-1):
+            new_list.append(numlist[i+1]-numlist[i])
+        return derivative_sequence(new_list, order-1)
+
+input_list = sys.argv[1][1:len(sys.argv[1])-1].split(",")
+numlist=[int(i) for i in input_list]
+
+print("Quiz 7: Recursion")
+print(derivative_sequence(numlist,int(sys.argv[2])))

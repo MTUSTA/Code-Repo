@@ -1,0 +1,23 @@
+print("Quiz: Sum of negative numbers and their total sum")
+
+#Open a new file for input
+file_input = open("input.txt", "r")
+#Open a new file for output
+file_output = open("output.txt", "w")
+sum=0
+total_sum=0
+for aline in file_input.readlines():
+	list = aline.split(';')
+	for i in list:
+		i=int(i)
+		if i<0:
+			sum=sum+i
+	print("Output: ",sum)
+	file_output.write("Output: "+str(sum)+"\n")
+	total_sum=total_sum+sum
+	sum=0
+print("Total Sum: "+str(total_sum))
+file_output.write("Total Sum: "+str(total_sum)+"\n")
+
+file_input.close()
+file_output.close()

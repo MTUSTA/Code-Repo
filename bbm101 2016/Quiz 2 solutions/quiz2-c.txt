@@ -1,0 +1,28 @@
+print("Quiz: Average of even numbers ")
+
+#Open a new file for input
+file_input = open("input.txt", "r")
+#Open a new file for output
+file_output = open("output.txt", "w")
+sum=0
+count=0
+for aline in file_input.readlines():
+	list = aline.split(';')
+	for i in list:
+		num=int(i)
+		if num%2==0:
+			sum=sum+num
+			count=count+1
+	if count>0:
+		print("Average of even numbers: ",sum/count)
+		#print("Average of even numbers: ",sum/count,file=file_output)
+		file_output.write("Average of even numbers: "+str(sum/count)+"\n")
+		sum=0
+		count=0
+	else:
+		print("There are no even numbers")
+		#print("There are no even numbers",file=file_output)
+		file_output.write("There are no even numbers"+"\n")
+
+file_input.close()
+file_output.close()

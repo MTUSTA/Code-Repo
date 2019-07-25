@@ -1,0 +1,28 @@
+print("Quiz: Average of negative numbers ")
+
+#Open a new file for input
+file_input = open("input.txt", "r")
+#Open a new file for output
+file_output = open("output.txt", "w")
+sum=0
+count=0
+for aline in file_input.readlines():
+	list = aline.split('/')
+	for i in list:
+		i=int(i)
+		if i<0:
+			sum=sum+i
+			count=count+1
+	if count>0:
+		print("Average:",str(sum/count))
+		#print("average of negative numbers: ",sum,file=file_output)
+		file_output.write("Average: "+str(sum/count)+"\n")
+		sum=0
+		count=0
+	else:
+		print("There is no negative number")
+		#print("There is no negative number",file=file_output)
+		file_output.write("There is no negative number"+"\n")
+
+file_input.close()
+file_output.close()

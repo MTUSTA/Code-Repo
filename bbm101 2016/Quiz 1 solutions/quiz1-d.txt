@@ -1,0 +1,19 @@
+print("Quiz: Sum of even numbers")
+
+#Open a new file for output
+output = open("outputFile.txt","w")
+
+total = 0
+
+for i in range(10):
+	print("Process ",i+1)
+	number = int(input("Please enter a number: "))
+	if number%2 == 0:
+		total = total + number
+
+out="{} is the sum of the odd numbers"
+print(out.format(total))				#print to the screen
+print(out.format(total),file=output)	#print to the file
+
+#Close the file
+output.close()

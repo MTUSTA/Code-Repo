@@ -1,0 +1,65 @@
+# -*- coding: utf-8 -*-
+
+__Author__ = "Necva BÖLÜCÜ"
+__Title__ = "Take Home"
+
+import pandas as pd
+import matplotlib.pyplot as plot
+
+data = pd.read_csv("weather_2012.csv",sep="," )
+
+#A) max temperature of meach month of the year
+#==============================================================================
+dictMonths={"01":"January","02":"February","03":"March","04":"April","05":"May","06":"June","07":"July","08":"August","09":"September","10":"October","11":"November","12":"December"}
+temp=[]
+for key in sorted(dictMonths):
+    month="2012-"+key
+    data1 = data.loc[data['Date/Time'].str.startswith(month)]
+    s=data1['Temp (C)'].max() 
+    temp.append(s)
+
+print("Month\t\tMax Temperature")
+for index in range(len(dictMonths.values())):
+    if index+1<10:
+        month = "0"+str(index+1)
+    else:
+        month = str(index+1)
+    if index>1 and index<8:
+        print(dictMonths[month],"\t\t",temp[index])
+    else:
+        print(dictMonths[month],"\t",temp[index])
+    
+x_pos=[x for x in range(len(dictMonths.values()))]
+y_labels = []
+for m in sorted(dictMonths.keys()):
+    y_labels.append(dictMonths[m])
+
+plot.bar(x_pos,temp,align="center",color="g",alpha=0.8)
+plot.xticks(x_pos,y_labels, rotation = 30)
+plot.ylabel="Temperature"
+plot.title("Max Temperature for Months")
+plot.savefig('maxtemp.png',orientation='landscape')
+plot.show()
+#==============================================================================
+
+
+#B) her hava durumu için ortalama sýcaklýk
+#==============================================================================
+
+grouped = data.groupby(data['Weather']).mean()
+setWeather=sorted(set(data['Weather'].tolist()))
+
+
+print(grouped['Temp (C)'])
+    
+fig=plot.figure(figsize=(15,10))
+x_pos=[x for x in range(len(setWeather))]
+plot.bar(x_pos,grouped['Temp (C)'].tolist(),align="center",color="b",alpha=0.8)
+plot.xticks(x_pos,setWeather,rotation=45,fontsize="x-small")
+plot.ylabel="Temperature"
+plot.autoscale(enable=True, axis='x', tight=True)
+plot.title("Mean Temperature for Weather")
+plot.tight_layout()
+plot.savefig('meantemp.png',orientation='landscape')
+plot.show()
+#==============================================================================

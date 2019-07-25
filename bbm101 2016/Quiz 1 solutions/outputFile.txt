@@ -1,0 +1,1 @@
+<built-in function sum> is the average of the odd numbers

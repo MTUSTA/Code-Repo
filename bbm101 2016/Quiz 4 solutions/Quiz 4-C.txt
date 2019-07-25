@@ -1,0 +1,25 @@
+import sys
+print("Quiz 4-C: Exceptions")
+pricefile = open(sys.argv[1],"r")
+fruitfile = open(sys.argv[2],"r")
+outputfile = open(sys.argv[3],"w")
+
+fruits = {}
+
+for fruit in pricefile.readlines():
+	fruit = fruit.rstrip("\n")
+	f = fruit.split(":")
+	fruits[f[0]] = f[1:]
+	
+for fruit in fruitfile.readlines():
+	fruit = fruit.rstrip("\n")
+	try:
+		print("Fruit:",fruit,"- price:",int(fruits[fruit][0])*int(fruits[fruit][1]))
+		outputfile.write("Fruit: "+fruit+" - price: "+ str(int(fruits[fruit][0])*int(fruits[fruit][1])) +"\n")
+	except:
+		print ("This fruit is not found:",fruit)
+		outputfile.write("This fruit is not found: "+fruit+"\n")
+
+pricefile.close()
+fruitfile.close()
+outputfile.close()

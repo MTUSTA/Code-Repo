@@ -1,0 +1,19 @@
+print("Quiz: Find max even number")
+
+#Open a new file for output
+output = open("outputFile.txt","w")
+
+max = -1
+
+for i in range(10):
+	number = int(input("Please enter a number: "))
+	if number%2 == 0:
+		if number > max:
+			max = number
+
+out = "{} is the new max even number"
+print(out.format(max))				#print to the screen
+print(out.format(max),file=output)	#print to the file
+
+#Close the file
+output.close()

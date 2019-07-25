@@ -1,0 +1,34 @@
+import sys
+print("Quiz 5-A: Exceptions")
+inputfile = open(sys.argv[1],"r")
+namefile = open(sys.argv[2],"r")
+outputfile = open(sys.argv[3],"w")
+
+students = {}
+
+def mean(list):
+    sum=0
+    for i in list:
+        sum+=int(i)
+    return sum/len(list)
+
+
+for student_record in inputfile.readlines():
+	student_record = student_record.rstrip("\n")
+	student = student_record.split(":")
+	students[student[0]] = student[1:]
+
+for name in namefile.readlines():
+    name =name.rstrip("\n")
+    try:
+        print("Name:",name,"  Grade: ",mean(students[name]))
+        outputfile.write("name: "+name+"  Grade: "+str(mean(students[name]))+"\n")
+    except KeyError as error:
+        print ("This name is not found:",error )
+        outputfile.write("This name is not found: "+str(error)+"\n")
+
+
+
+inputfile.close()
+namefile.close()
+outputfile.close()

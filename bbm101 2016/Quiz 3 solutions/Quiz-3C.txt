@@ -1,0 +1,33 @@
+print("Quiz: Dictionary")
+
+#Open a new file for input
+file_input = open("input.txt", "r")
+
+#Open a new file for output
+file_output = open("output.txt", "w")
+sumeven=0
+counteven=0
+sumodd=0;
+countodd=0;
+dict={}
+total_list=list()
+for aline in file_input.readlines():
+    #aline=aline.strip("\n")
+    list = aline.split('!')
+    total_list.extend(list)
+
+for item in total_list:
+    if int(item)%2==0:
+        sumeven+=int(item)
+        counteven+=1
+
+    if int(item)%2!=0:
+        sumodd+=int(item)
+        countodd+=1
+dict["even"]=sumeven/counteven
+dict["odd"]=sumodd/countodd
+#print(sumeven,counteven)
+print(dict)
+file_output.write(str(dict))
+file_input.close()
+file_output.close()

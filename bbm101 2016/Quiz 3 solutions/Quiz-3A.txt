@@ -1,0 +1,33 @@
+print("Quiz: Dictionary")
+
+#Open a new file for input
+file_input = open("input.txt", "r")
+
+#Open a new file for output
+file_output = open("output.txt", "w")
+sum3=0
+count3=0
+sum5=0;
+count5=0;
+dict={}
+total_list=list()
+for aline in file_input.readlines():
+    #aline=aline.strip("\n")
+    list = aline.split('/')
+    total_list.extend(list)
+
+for item in total_list:
+    if int(item)%3==0:
+        sum3+=int(item)
+        count3+=1
+
+    if int(item)%5==0:
+        sum5+=int(item)
+        count5+=1
+dict["divisible3"]=sum3/count3
+dict["divisible5"]=sum5/count5
+#print(sum3,count3)
+print(dict)
+file_output.write(str(dict))
+file_input.close()
+file_output.close()

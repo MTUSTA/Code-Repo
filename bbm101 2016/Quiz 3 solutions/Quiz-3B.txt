@@ -1,0 +1,33 @@
+print("Quiz: Dictionary")
+
+#Open a new file for input
+file_input = open("inputB.txt", "r")
+
+#Open a new file for output
+file_output = open("output.txt", "w")
+sumpos=0
+countpos=0
+sumneg=0;
+countneg=0;
+dict={}
+total_list=list()
+for aline in file_input.readlines():
+    #aline=aline.strip("\n")
+    list = aline.split(':')
+    total_list.extend(list)
+
+for item in total_list:
+    if int(item)>0:
+        sumpos+=int(item)
+        countpos+=1
+
+    if int(item)<0:
+        sumneg+=int(item)
+        countneg+=1
+dict["posaverage"]=sumpos/countpos
+dict["negaverage"]=sumneg/countneg
+
+print(dict)
+file_output.write(str(dict))
+file_input.close()
+file_output.close()

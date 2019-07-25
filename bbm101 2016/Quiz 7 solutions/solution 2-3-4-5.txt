@@ -1,0 +1,43 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Dec 22 12:47:40 2016
+
+@author: selma
+"""
+import sys
+
+def prime_factors(n):
+    lst = []
+    f = 2
+    if n<=f:
+        lst.append(n)
+    else:
+        while n%f!=0:
+            f+=1
+        if n==f:
+            lst.append(n)
+        else:
+            lst.append(f)
+            lst = lst + prime_factors(n//f)
+    return lst
+
+print("Quiz 7: Recursion")
+nums = sys.argv[1].split(",")
+#nums = "12,147,17".split(",")
+intnums = [int(i) for i in nums]
+           
+for num in intnums:
+    factors = prime_factors(num)
+    unique_factors=sorted(set(factors))
+    
+    output = str(num)+" = "
+    
+    for fact in unique_factors:
+        if factors.count(fact)>1:
+            output += str(fact)+"^"+str(factors.count(fact))+" * "
+        else:
+            output += str(fact)+" * "
+    
+    output = output[0:len(output)-3]
+    
+    print(output)

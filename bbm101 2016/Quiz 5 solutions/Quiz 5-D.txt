@@ -1,0 +1,31 @@
+import sys
+print("Quiz 5-D: Exceptions")
+inputfile = open(sys.argv[1],"r")
+outputfile = open(sys.argv[2],"w")
+
+math = {}
+
+def sum(list):
+    sum=0
+    for i in list[1:]:
+        try:
+            sum+=int(i)
+            #print("The item can be converted to int",i)
+            #outputfile.write("The item can be converted to int "+i+" \n")
+        except ValueError:
+            print("The item can't be converted to int",i)
+            outputfile.write("The item can't be converted to int "+i+" \n")
+    #print("\n")
+    print(list[0],"Sum ",sum)
+    outputfile.write(list[0]+" Sum "+str(sum)+"\n")
+
+
+for line in inputfile.readlines():
+	line = line.rstrip("\n")
+	lineList = line.split(";")
+	sum(lineList)
+
+
+
+inputfile.close()
+outputfile.close()

@@ -1,0 +1,25 @@
+import sys
+print("Quiz 4-F: Exceptions")
+inputfile = open(sys.argv[1],"r")
+namefile = open(sys.argv[2],"r")
+outputfile = open(sys.argv[3],"w")
+
+students = {}
+
+for student_record in inputfile.readlines():
+    student_record = student_record.rstrip("\n")
+    student = student_record.split("?")
+    students[student[0]] = student[1:]
+	
+for name in namefile.readlines():
+    name =name.rstrip("\n")
+    try:
+        print("Name:",name,"University:",students[name][0],"Term:",students[name][2])
+        outputfile.write("Name: "+name+" University: "+students[name][0]+" Term: "+students[name][2]+"\n")
+    except:
+        print ("This name is not found:", name)
+        outputfile.write("This name is not found: "+name+"\n")
+
+inputfile.close()
+namefile.close()
+outputfile.close()
