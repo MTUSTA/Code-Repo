@@ -1,92 +1,122 @@
-#------------------------------------------------------------#
-# Student Name:
-# Student ID:
-# BBM103 Introduction to Programming Laboratory I, Fall 2016 
+# ------------------------------------------------------------ #
+# Student Name:Mehmet Taha USTA
+# Student ID:21527472
+# BBM103 Introduction to Programming Laboratory I, Fall 2016
 # Assignment 3: Mission: Save the Earth
-#------------------------------------------------------------#
-
-# Importing the sys module that supports reading command-line arguments
+# ------------------------------------------------------------ #
 import sys
 
+dictionary1 = open(sys.argv[1], "r")
+binarian_transmission1 = open(sys.argv[2], "r")
+peace_message1 = open(sys.argv[3], "r")
 
-#-------------------------------------------------#
-#                   Functions                     #
-#-------------------------------------------------#
-
-def read_dictionary(file_handle):
-    """This function reads a text file with
-       Binarian-English Dictionary, and returns it
-       as a dictionary data structure, where keys
-       are words in Binarian, and values are their
-       English counterparts."""
-
-    pass # Delete this row and write your code to complete the function
+my_dict1 = {}
+my_dict2 = {}
+satirlar = []
 
 
-def binarian_to_english(text):
-    """This function translates a text in Binarian
-       language to English and returns the translation."""
-
-    pass # Delete this row and write your code to complete the function
+for binarian_lines in binarian_transmission1.readlines():
+    binarian_lines = binarian_lines.rstrip("\n")
+    satirlar.append(binarian_lines)
 
 
-def english_to_binarian(text):
-    """This function translates a text in English
-       language to Binarian and returns the translation."""
-
-    pass # Delete this row and write your code to complete the function
-
-
-def binary_to_decimal(number):
-    """This function takes a binary number as input
-       and returns its decimal value."""
-
-    pass # Delete this row and write your code to complete the function
-
-def decimal_to_binary(number):
-    """This function takes a decimal number as input
-       and returns its binary value."""
-
-    pass # Delete this row and write your code to complete the function
-
-def ly_to_km(distance):
-    """This function takes a distance in light-years
-       and returns its value in kilometers."""
-
-    pass # Delete this row and write your code to complete the function
+def create_dictionary():
+    for dictionary_lines in dictionary1.readlines():
+        liste = dictionary_lines.split(" ")
+        my_dict1[liste[0]] = liste[1]
+        my_dict2[liste[1]] = liste[0]
 
 
+def binarian_to_english(satirlar):
+    for binarian_lines in satirlar:
+        if binarian_lines[0] != "#" and binarian_lines[0] != "+":
+            binarian_lines = binarian_lines.split(" ")
+            for i in binarian_lines:
+                try:
+                    print(my_dict1[i], end=" ")
+                except KeyError as msg1:
+                    print(str(msg1)[1:-1], end=" ")
+            print("\n", end="")
 
-#-------------------------------------------------#
-#                 Main Program                    #
-#-------------------------------------------------#
+
+def binary_to_decimal(satirlar):
+    print("\nData about Binarian planet:")
+    uzaklik = 0
+    decimal_number_temperature = 0
+    decimal_number_orbital_speed = 0
+    for binarian_lines in satirlar:
+        binarian_lines = binarian_lines.split(" ")
+        if binarian_lines[0] == "+" and binarian_lines[2].isdigit():
+            if binarian_lines[1] == my_dict2["temperature"]:
+
+                power_temperature = 0
+                binarian_lines[2] = int(binarian_lines[2])
+                while binarian_lines[2] > 0:
+                    decimal_number_temperature += 2 ** power_temperature * (binarian_lines[2] % 10)
+                    binarian_lines[2] //= 10
+                    power_temperature += 1
+            if binarian_lines[1] == my_dict2["orbital-speed"]:
+                power_orbital_speed = 0
+                binarian_lines[2] = int(binarian_lines[2])
+                while binarian_lines[2] > 0:
+                    decimal_number_orbital_speed += 2 ** power_orbital_speed * (binarian_lines[2] % 10)
+                    binarian_lines[2] //= 10
+                    power_orbital_speed += 1
+            if binarian_lines[1] == my_dict2["distance"]:
+                decimal_number_distance = 0
+                power_distance = 0
+                binarian_lines[2] = int(binarian_lines[2])
+                one_light_year = 9.4607*(10**12)
+                while binarian_lines[2] > 0:
+                    decimal_number_distance += 2 ** power_distance * (binarian_lines[2] % 10)
+                    binarian_lines[2] //= 10
+                    power_distance += 1
+                    uzaklik = one_light_year*decimal_number_distance
+    print("Distance from the Earth:", '%e'%float(uzaklik), "km")
+    print("Planet temperature:", float(decimal_number_temperature), "degrees Celsius")
+    print("Orbital speed:", float(decimal_number_orbital_speed), "km/s\n")
 
 
-############ Your code goes here ##################
+
+def english_to_binarian():
+
+    for peace_message_lines in peace_message1.readlines():
+        peace_message_lines = peace_message_lines.rstrip("\n")
+        peace_message_lines = peace_message_lines.split(" ")
+        for word in peace_message_lines:
+
+            try:
+                if len(word) > 0:
+                    if word[-1] == "," or word[-1] == "!" or word[-1] == "?" or word[-1] == ".":
+                        print(my_dict2[word[:-1].lower()], end=" ")
+                    else:
+                        print(my_dict2[word.lower()], end=" ")
+
+            except KeyError:
+                if len(word) > 0:
+                    #word[:-1].isalpha()
+                    if (word[-1] == "!" or word[-1] == "?" or word[-1] == "." or word[-1] == ",") and word.isalpha():
+                        print(word[:-1], end=" ")
+                    if word[-1] != "," and word[-1] != "." and word[-1] != "?" and word[-1] != "!" and word.isalpha():
+                        print(word, end=" ")
+                    if word[-1] != "," and word[-1] != "." and word[-1] != "?" and word[-1] != "!" and word.isdigit():
+                        word = int(word)
+                        binNum = 0
+                        power = 0
+                        while word > 0:
+                            binNum += 10 ** power * (word % 2)
+                            word //= 2
+                            power += 1
+                        print(int(binNum), end=" ")
+        print("\n", end="")
 
 
-# A couple of suggestions for starting:
+create_dictionary()
+binarian_to_english(satirlar)
+binary_to_decimal(satirlar)
+english_to_binarian()
 
-#   1. Do not panic! This assignment is much easier than it seems. Trust me!
-#   2. Take a deep breath and start with the simplest tasks first:
-#       - read the input files and print them out to see if you are reading them correctly.
-#   3. Store the contents of dictionary.txt in a dictionary data structure and try
-#      accessing some of its elements.
-#   4. Think about how you can use your dictionary to translate the message once you extract it.
-#   5. Think about what you need to consider when extracting the message from the jumbled transmission:
-#       - How will you check if a line starts with a special character or not?
-#       - Try extraxcting relevant lines and printing them to check if you are doing it correctly.
-#       - Once you have the relevant lines, think about how you will translate them word-by-word
-#         using your dictionary.
-#   6. Once you get started, it will get easier. Do one step at a time and check your results at each step.
-#   7. Do not try to code everything at once hoping it will work in the end. In most cases, it will not. 
-#	   Instead, divide your work into smaller independent parts which you will test separately.
+dictionary1.close()
+binarian_transmission1.close()
+peace_message1.close()
 
-#   I want everyone to try and complete this assignment. Even if it seems too hard for you at first,
-#   I want you to get started and do as much as you can. When you get stuck, ask for advice on how to proceed.
-#   The most important thing is that you believe that you can do this. If you work on the assignment
-#   every day for at least 30 minutes, you will make progress fast. So don't wait until the last week to start.
-#   Start now! Try to enjoy solving this to keep yourself motivated. And trust me when I tell you that:
-#   YOU CAN DO THIS!
-#   You just need to work on it.
-#   Good luck! :)
