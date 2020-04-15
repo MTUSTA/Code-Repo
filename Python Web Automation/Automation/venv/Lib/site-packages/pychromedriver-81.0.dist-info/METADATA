@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pychromedriver
+Version: 81.0
+Summary: A package to sync chrome driver to lastest version
+Home-page: https://github.com/parklam/pychromedriver
+Author: Park Lam
+Author-email: lqmonline@gmail.com
+License: UNKNOWN
+Keywords: chromedriver chrome driver
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# pychromedriver
+## Installation:
+```
+# From PyPI
+pip install pychromedriver
+```
+## Usage:
+```
+from selenium import webdriver
+from pychromedriver import chromedriver_path
+
+bs = webdriver.Chrome(executable_path=chromedriver_path)
+bs.get('https://www.pypi.org')
+```
+
+

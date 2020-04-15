@@ -1,0 +1,3 @@
+[console_scripts]
+chromedriver-path = chromedriver_binary.utils:print_chromedriver_path
+
