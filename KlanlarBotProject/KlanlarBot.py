@@ -7,6 +7,7 @@ import time
 
 
 class KlanlarBot():
+
     def __init__(self):
         # if process or program use this file --> give an error --> permission denied
         self.browser = webdriver.Chrome(ChromeDriverManager().install())
