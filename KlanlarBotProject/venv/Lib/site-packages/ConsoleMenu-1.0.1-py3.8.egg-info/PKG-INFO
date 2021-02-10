@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: ConsoleMenu
+Version: 1.0.1
+Summary: Simplest console menu you've ever seen.
+Made on dicts, it allows you to easily implement a console menu without a number of classes like 'MenuItem', etc.
+Just setup a dict, type a title and that's all.
+Home-page: https://github.com/EgorAlmikeev/ConsoleMenu
+Author: Egor Almikeev
+Author-email: ealmikeew@gmail.com
+License: MIT
+Download-URL: https://github.com/EgorAlmikeev/ConsoleMenu/archive/v_1.0.0.tar.gz
+Description: UNKNOWN
+Keywords: CONSOLE,MENU,CONSOLEMENU
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
