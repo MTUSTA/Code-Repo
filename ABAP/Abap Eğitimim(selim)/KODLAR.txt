@@ -1,0 +1,7 @@
+SE11   ===>>   Abap Dictionary (arama ekraný)
+SE80   ===>>   Object Navigator
+SE16N  ===>>   Tablo Ýçeriðini Görüntüleme
+SM30   ===>>   Kayýt Girme
+SE51   ===>>   Ekran Oluþturma
+SE41   ===>>   GUI Status Nesnesi Oluþturma
+SE38   ===>>   ABAP Düzenleyici

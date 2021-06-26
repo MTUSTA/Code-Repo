@@ -1,0 +1,31 @@
+REPORT ZASALSAYI.
+
+DATA : t_no TYPE i,
+       res TYPE p,
+       pr_no TYPE p,
+       tag TYPE i.
+
+SELECTION-SCREEN BEGIN OF BLOCK b1.
+PARAMETERS : SayýGir TYPE i.
+SELECTION-SCREEN END OF BLOCK b1.
+pr_no = 1.
+
+WHILE pr_no LE SayýGir.
+t_no = 2.
+tag = 0.
+WHILE t_no < pr_no.
+res = pr_no MOD t_no.
+IF res = 0.
+WRITE : / pr_no.
+WRITE : 'Bu sayý asal sayý belirtmez.' COLOR 3 INTENSIFIED OFF.
+tag = 1.
+EXIT.
+ENDIF.
+t_no = t_no + 1.
+ENDWHILE.
+IF tag = 0.
+WRITE : / pr_no.
+WRITE : 'Bu sayý asal sayý belirtir.'  COLOR 6 INTENSIFIED OFF.
+ENDIF.
+pr_no = pr_no + 1.
+ENDWHILE.

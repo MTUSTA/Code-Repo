@@ -1,0 +1,1 @@
+Tablo oluþtururken MANDT üst birimi her zaman tanýtýlmalýdýr. Ayrý bir satýr olarak.

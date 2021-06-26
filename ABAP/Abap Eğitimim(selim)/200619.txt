@@ -1,0 +1,25 @@
+REPORT ZMM_DENEME200619.
+*
+*------------------------------------------------------------------------
+
+
+*SABÝT TANIMLAMA
+
+*constants : ay type i value 12,
+*            gun type i value 365,
+*            saat type i value 60.
+*
+*write : ay, gun, saat.
+
+*-------------------------------------------------------------------------
+
+*SABÝT DEÐER ÇAÐIRMA
+*
+*constants : begin of aday,
+*                     isim(20) type c value 'güney',
+*                     id type n value '1',
+*                     sonuc type p decimals 2 value '89.20',
+*                     sira type i value 193,
+*            end of aday.
+*
+*write:/ aday-isim, aday-id, aday-sonuc, aday-sira.

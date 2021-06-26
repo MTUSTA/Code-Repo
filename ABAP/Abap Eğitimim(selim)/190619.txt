@@ -1,0 +1,49 @@
+*&---------------------------------------------------------------------*
+*& Report  ZMM_DENEME19019
+*&
+*&---------------------------------------------------------------------*
+*&
+*&
+*&---------------------------------------------------------------------*
+report zmm_deneme19019.
+*data: ad       type c length 50,
+*      soyad    type c length 50,
+*      tcno(11) type c,
+*      brlsm(120) TYPE c.
+*
+*ad = 'yagmur'.
+*soyad = 'yilmaz'.
+*tcno = '12345678901234567'.
+*
+*ad = ad+0(2).
+*
+*CONCATENATE: ad soyad tcno into brlsm SEPARATED BY space.
+*
+*WRITE brlsm.
+
+****************************selim
+
+*parameter: sayi1 type i,
+*           sayi2 type i.
+*
+* data Toplama type i.
+*
+*
+* Toplama = sayi1 + sayi2.
+*
+* write Toplama.
+
+***************************yagmur
+
+parameters: bilet       type i,
+            seyrc       type i,
+            oyunadi(20) type c.
+
+data:       gelir      type i,
+            gelir2(10) type c.
+
+gelir = bilet * seyrc.
+move gelir to gelir2.
+condense gelir2. "bosluklarý siler
+concatenate oyunadi 'geliri:' gelir2 into oyunadi separated by space. "birleþtirme yapar
+write oyunadi.
