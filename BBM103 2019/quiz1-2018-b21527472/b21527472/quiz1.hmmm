@@ -1,0 +1,14 @@
+0 read r1 # fallingTime Read the user's input
+1 read r2 # initialPosition Read the user's input
+2 read r3 # initialVelocity Read the user's input
+3 setn r4 -10 # gravity
+4 setn r5 0 # finalPosition
+5 mul r4 r4 r1 # gravity*fallingTime
+6 mul r4 r4 r1 # gravity*fallingTime*fallingTime
+7 setn r6 2 # define 2
+8 div r4 r4 r6 # (gravity*fallingTime*fallingTime)/2
+9 mul r3 r3 r1 # initialVelocity*fallingTime
+10 mul r3 r3 r2 # initialVelocity*fallingTime*initialPosition
+11 add r5 r4 r3 # initialVelocity*gravity
+12 write r5 # result
+13 halt #stop
