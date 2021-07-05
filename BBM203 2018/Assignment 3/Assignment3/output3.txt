@@ -1,0 +1,83 @@
+1)THE MOST SCORED HALF
+1
+2)GOAL SCORER
+Bulut Gundebahar
+3)THE NAMES OF FOOTBALLERS WHO SCORED HAT-TRICK
+Bati Kalkanci
+Talu Gokce
+4)LIST OF TEAMS
+Baskil County
+Kecioren County
+Canik City
+Ceylanpinar Utd.
+Defne Spor
+5)LIST OF FOOTBALLERS
+Agca Tunckol
+Akin Taskin
+Alpdogan Okant
+Aral Delikara
+Arkan Kahriman
+Aybars Gursoy
+Bati Kalkanci
+Beha Balta
+Behzat Karaarslan
+Berkkan Soyalp
+Bulut Gundebahar
+Cankut Koyun
+Demir Akbay
+Doga Akturkce
+Erbug Bilican
+Erdinc Gundebahar
+Gediz  Saltik
+Gencalp Evren
+Giray Aytekin
+Goktunc Pekcandanoglu
+Gokturk Kayali
+Gunalp Akca
+Ilgaz Yucesu
+Ilker Dogan
+Kanat Dedelioglu
+Kapkin Apa
+Nursal Bilican
+Ozgun Oktar
+Pasin Sefi
+Sanal Adisen
+Sarper Eren
+Talaz Yuzyil
+Talu Gokce
+Talu Sayin
+Tanay Kocacikli
+Turkcan Hancer
+Ulku Akyon
+Ulubay Isler
+Unver Ali
+Yavuzalp Dogulu
+Yontem Kaymas
+Zobu Kesen
+6)MATCHES OF GIVEN FOOTBALLER
+Matches of Erbug Bilican
+Footballer Name: Erbug Bilican,Away Team: Ceylanpinar Utd.,Min of Goal: 23,Match ID: 7
+Footballer Name: Erbug Bilican,Away Team: Ceylanpinar Utd.,Min of Goal: 8,Match ID: 11
+Footballer Name: Erbug Bilican,Away Team: Defne Spor,Min of Goal: 63,Match ID: 12
+Matches of Ulku Akyon
+Footballer Name: Ulku Akyon,Away Team: Baskil County,Min of Goal: 33,Match ID: 6
+Footballer Name: Ulku Akyon,Away Team: Canik City,Min of Goal: 66,Match ID: 9
+Footballer Name: Ulku Akyon,Away Team: Defne Spor,Min of Goal: 61,Match ID: 14
+7)ASCENDING ORDER ACCORDING TO MATCH ID
+footballer Name: Bulut Gundebahar,Match ID: 0
+footballer Name: Bulut Gundebahar,Match ID: 4
+footballer Name: Bulut Gundebahar,Match ID: 6
+footballer Name: Bulut Gundebahar,Match ID: 8
+footballer Name: Bulut Gundebahar,Match ID: 10
+footballer Name: Gencalp Evren,Match ID:2
+footballer Name: Gencalp Evren,Match ID:9
+8)DESCENDING ORDER ACCORDING TO MATCH ID
+footballer Name: Demir Akbay,Match ID: 14
+footballer Name: Demir Akbay,Match ID: 12
+footballer Name: Demir Akbay,Match ID: 6
+footballer Name: Demir Akbay,Match ID: 4
+footballer Name: Bulut Gundebahar,Match ID: 10
+footballer Name: Bulut Gundebahar,Match ID: 8
+footballer Name: Bulut Gundebahar,Match ID: 6
+footballer Name: Bulut Gundebahar,Match ID: 4
+footballer Name: Bulut Gundebahar,Match ID: 0

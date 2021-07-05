@@ -1,0 +1,9 @@
+8
+MESSAGE A G #This text is dedicated to check if 2nd assignment works properly.#
+SHOW_FRAME_INFO A out 1
+SHOW_Q_INFO A out
+SHOW_Q_INFO A in
+SHOW_FRAME_INFO A in 4
+SEND A
+PRINT_LOG F
+INVALID COMMAND

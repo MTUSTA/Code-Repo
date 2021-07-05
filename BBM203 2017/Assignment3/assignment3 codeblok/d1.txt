@@ -1,0 +1,2 @@
+The funct printf() and scanf() types, plus null-term and char strings. Char strings char and.
+Blah blah blah blah

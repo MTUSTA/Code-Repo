@@ -1,0 +1,118 @@
+-----------------------------------------------------------------------------------------
+Command: MESSAGE A G #This text is dedicated to check if 2nd assignment works properly.#
+-----------------------------------------------------------------------------------------
+Message to be sent: This text is dedicated to check if 2nd assignment works properly.
+
+Frame #1
+Sender MAC address: AAAAAAAAAA, Receiver MAC address: CCCCCCCCCC
+Sender IP address: 1.1.1.1, Receiver IP address: 7.7.7.7
+Sender port number: 0706, Receiver port number: 0607
+Sender ID: A, Receiver ID: G
+Message chunk carried: This text i
+--------
+Frame #2
+Sender MAC address: AAAAAAAAAA, Receiver MAC address: CCCCCCCCCC
+Sender IP address: 1.1.1.1, Receiver IP address: 7.7.7.7
+Sender port number: 0706, Receiver port number: 0607
+Sender ID: A, Receiver ID: G
+Message chunk carried: s dedicated
+--------
+Frame #3
+Sender MAC address: AAAAAAAAAA, Receiver MAC address: CCCCCCCCCC
+Sender IP address: 1.1.1.1, Receiver IP address: 7.7.7.7
+Sender port number: 0706, Receiver port number: 0607
+Sender ID: A, Receiver ID: G
+Message chunk carried:  to check i
+--------
+Frame #4
+Sender MAC address: AAAAAAAAAA, Receiver MAC address: CCCCCCCCCC
+Sender IP address: 1.1.1.1, Receiver IP address: 7.7.7.7
+Sender port number: 0706, Receiver port number: 0607
+Sender ID: A, Receiver ID: G
+Message chunk carried: f 2nd assig
+--------
+Frame #5
+Sender MAC address: AAAAAAAAAA, Receiver MAC address: CCCCCCCCCC
+Sender IP address: 1.1.1.1, Receiver IP address: 7.7.7.7
+Sender port number: 0706, Receiver port number: 0607
+Sender ID: A, Receiver ID: G
+Message chunk carried: nment works
+--------
+Frame #6
+Sender MAC address: AAAAAAAAAA, Receiver MAC address: CCCCCCCCCC
+Sender IP address: 1.1.1.1, Receiver IP address: 7.7.7.7
+Sender port number: 0706, Receiver port number: 0607
+Sender ID: A, Receiver ID: G
+Message chunk carried:  properly.
+--------
+---------------------------------
+Command: SHOW_FRAME_INFO A out 1
+---------------------------------
+Current Frame #1 on the outgoing queue of client A
+Carried Message: "This text i"
+Layer 0 info: Sender ID: A, Receiver ID: G
+Layer 1 info: Sender port number: 0706, Receiver port number: 0607
+Layer 2 info: Sender IP address: 1.1.1.1, Receiver IP address: 7.7.7.7
+Layer 3 info: Sender MAC address: AAAAAAAAAA, Receiver MAC address: CCCCCCCCCC
+Number of hops so far: 0
+---------------------------
+Command: SHOW_Q_INFO A out
+---------------------------
+Client A Outgoing Queue Status
+Current total number of frames: 6
+--------------------------
+Command: SHOW_Q_INFO A in
+--------------------------
+Client A Incoming Queue Status
+Current total number of frames: 0
+--------------------------------
+Command: SHOW_FRAME_INFO A in 4
+--------------------------------
+No such frame.
+----------------
+Command: SEND A
+----------------
+A message received by client C, but intended for client G. Forwarding...
+	Frame #1 MAC address change: New sender MAC CCCCCCCCCC, new receiver MAC FFFFFFFFFF
+	Frame #2 MAC address change: New sender MAC CCCCCCCCCC, new receiver MAC FFFFFFFFFF
+	Frame #3 MAC address change: New sender MAC CCCCCCCCCC, new receiver MAC FFFFFFFFFF
+	Frame #4 MAC address change: New sender MAC CCCCCCCCCC, new receiver MAC FFFFFFFFFF
+	Frame #5 MAC address change: New sender MAC CCCCCCCCCC, new receiver MAC FFFFFFFFFF
+	Frame #6 MAC address change: New sender MAC CCCCCCCCCC, new receiver MAC FFFFFFFFFF
+A message received by client F, but intended for client G. Forwarding...
+	Frame #1 MAC address change: New sender MAC FFFFFFFFFF, new receiver MAC GGGGGGGGGG
+	Frame #2 MAC address change: New sender MAC FFFFFFFFFF, new receiver MAC GGGGGGGGGG
+	Frame #3 MAC address change: New sender MAC FFFFFFFFFF, new receiver MAC GGGGGGGGGG
+	Frame #4 MAC address change: New sender MAC FFFFFFFFFF, new receiver MAC GGGGGGGGGG
+	Frame #5 MAC address change: New sender MAC FFFFFFFFFF, new receiver MAC GGGGGGGGGG
+	Frame #6 MAC address change: New sender MAC FFFFFFFFFF, new receiver MAC GGGGGGGGGG
+A message received by client G from client A after a total of 3 hops.
+Message: This text is dedicated to check if 2nd assignment works properly.
+---------------------
+Command: PRINT_LOG F
+---------------------
+Client F Logs:
+--------------
+Log Entry #1:
+Timestamp: 2018-12-7 11:16:25
+Message: This text is dedicated to check if 2nd assignment works properly.
+Number of frames: 6
+Number of hops: 2
+Sender ID: A
+Receiver ID: G
+Activity: Message Received
+Success: Yes
+--------------
+Log Entry #2:
+Timestamp: 2018-12-7 11:16:25
+Message: This text is dedicated to check if 2nd assignment works properly.
+Number of frames: 6
+Number of hops: 2
+Sender ID: A
+Receiver ID: G
+Activity: Message Forwarded
+Success: Yes
+-------------------------
+Command: INVALID COMMAND
+-------------------------
+Invalid command.

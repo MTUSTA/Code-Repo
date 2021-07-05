@@ -1,0 +1,20 @@
+Memory 4
+PriorityQueue Page Replacement
+Binary Search Tree
+Page Fault	 a
+Page Fault	 a c
+          	 a c
+Page Fault	 a c b
+Page Fault	 a c b k
+          	 a c b k
+Page Fault	 a c b d
+Page Fault	 a c b p
+Page Fault	 a c b y
+		 a c b y
+Page Fault       a c b p
+Page Fault	 a c b e
+Page Fault	 a c b t
+		 a c b t
+10
+
+

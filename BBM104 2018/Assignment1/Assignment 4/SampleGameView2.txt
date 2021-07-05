@@ -1,0 +1,36 @@
+Game grid:
+
+D D S T W S D T W S 
+S W T D S W T S D T
+D D S T W S D T W S 
+S W T D S W T S D T
+W D S T D D S W T S 
+D D S T W S D T W S 
+S W D D S W T S D T
+W D S T D D S W T S 
+D D S T W S D T W S
+D D S T W S D T W S 
+
+Select coordinate or enter E to end the game: 7 7 
+
+D D S T W S D   W S 
+S W T D S W T   D T
+D D S T W S D   W S 
+S W T D S W T T D T
+W D S T D D S S T S 
+D D S T W S D T W S 
+S W D D S W T S D T
+W D S T D D S W T S 
+D D S T W S D T W S
+D D S T W S D S W S
+
+Score: 40 points.
+Select coordinate or enter E to end the game: E
+
+Total score: 40 points.
+
+Enter name: Alex
+Your rank is 2/2, your score is 85 points lower than John
+
+Good bye!
+

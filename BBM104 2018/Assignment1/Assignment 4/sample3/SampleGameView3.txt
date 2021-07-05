@@ -1,0 +1,50 @@
+Game grid:
+
+D D S T W S \ T W S
+S W T D S / T S D T
+D D S T / S D T W S
+S W T D S W T S D T
+T D + T D D S D T |
+/ D - - + S D T W S
++ W D D S W T S D T
+W D S T D D S + T S
+D D S T W S D + W S
+D + \ - W S D | W S
+
+Select coordinate or enter E to end the game: 2 4
+
+D D S T       T W S
+S W T D W S T S D T
+D D S T S S D T W S
+S W T D S W T S D T
+T D + T D D S D T |
+/ D - - + S D T W S
++ W D D S W T S D T
+W D S T D D S + T S
+D D S T W S D + W S
+D + \ - W S D | W S
+
+Score: 60 points.
+Select coordinate or enter E to end the game: 9 7
+
+D D S T         W S
+S W T D W S T   D T
+D D S T S S D   W S
+S W T D S W T T D T
+T D + T D D S S T |
+/ D - - + S D T W S
++ W D D S W T S D T
+W D S T D D S D T S
+D D S T W S D T W S
+D + \ - W S D S W S
+
+Score: 60 points.
+Select coordinate or enter E to end the game: E
+
+Total score: 120 points
+
+Enter name: Chris
+Your rank is 2/3, your score is 80 points higher than Alex and 5 points lower than John
+
+Good bye!  
+ 

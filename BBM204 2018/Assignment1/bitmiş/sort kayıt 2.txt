@@ -1,0 +1,110 @@
+sayi 44
+traffic100
+selection finish 3 
+quick finish 2 
+merge finish 0 
+
+selection finish 3 
+quick finish 2 
+merge finish 1 
+
+selection finish 2 
+quick finish 2 
+merge finish 1 
+
+selection finish 3 
+quick finish 2 
+merge finish 1 
+
+selection finish 3 
+quick finish 2 
+merge finish 1 
+
+/////////////////////////////////////////
+traffic1000
+selection finish 44 
+quick finish 14 
+merge finish 3 
+
+selection finish 44 
+quick finish 18 
+merge finish 3 
+
+selection finish 48 
+quick finish 17 
+merge finish 3 
+
+selection finish 48 
+quick finish 17 
+merge finish 3 
+
+selection finish 49 
+quick finish 16 
+merge finish 3 
+
+////////////////////////////////
+traffic50000
+selection finish 4853 
+quick finish 3230 
+merge finish 32 
+
+selection finish 4832 
+quick finish 3140 
+merge finish 24 
+
+selection finish 4838 
+quick finish 3081 
+merge finish 27 
+
+selection finish 5908 
+quick finish 3099 
+merge finish 33 
+
+selection finish 5327 
+quick finish 3048 
+merge finish 28 
+
+///////////////////////////////
+traffic 100000
+
+selection finish 29016 
+quick finish 14166 
+merge finish 44 
+
+selection finish 29151 
+quick finish 13896 
+merge finish 60 
+
+selection finish 29219 
+quick finish 14109 
+merge finish 38 
+
+selection finish 29221 
+quick finish 13731 
+merge finish 47 
+
+selection finish 29160 
+quick finish 13763 
+merge finish 53 
+
+/////////////////////////////
+traffic all
+selection finish 241185 
+quick finish 55683 
+merge finish 116 
+
+selection finish 240976 
+quick finish 60271 
+merge finish 82 
+
+selection finish 133696 
+quick finish 52785 
+merge finish 107 
+
+selection finish 232789 ms
+quick finish 48913 ms
+merge finish 108 ms
+
+selection finish 235258 ms
+quick finish 52213 ms
+merge finish 78 ms

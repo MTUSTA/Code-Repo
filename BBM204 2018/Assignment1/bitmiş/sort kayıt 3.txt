@@ -1,0 +1,109 @@
+sayi79 
+traffic 100
+
+selection finish 2 ms
+quick finish 3 ms
+merge finish 1 ms
+
+selection finish 3 ms
+quick finish 3 ms
+merge finish 2 ms
+
+selection finish 3 ms
+quick finish 3 ms
+merge finish 1 ms
+
+selection finish 3 ms
+quick finish 3 ms
+merge finish 1 ms
+
+selection finish 2 ms
+quick finish 2 ms
+merge finish 1 ms
+
+
+traffic 1000
+selection finish 44 ms
+quick finish 51 ms
+merge finish 2 ms
+
+selection finish 44 ms
+quick finish 50 ms
+merge finish 3 ms
+
+selection finish 42 ms
+quick finish 48 ms
+merge finish 2 ms
+
+selection finish 45 ms
+quick finish 49 ms
+merge finish 3 ms
+
+selection finish 50 ms
+quick finish 53 ms
+merge finish 2 ms
+
+traffic 50000
+selection finish 3039 ms
+quick finish 9781 ms
+merge finish 25 ms
+
+selection finish 3053 ms
+quick finish 9978 ms
+merge finish 22 ms
+
+selection finish 3054 ms
+quick finish 9697 ms
+merge finish 29 ms
+
+selection finish 3211 ms
+quick finish 9790 ms
+merge finish 25 ms
+
+selection finish 3040 ms
+quick finish 10125 ms
+merge finish 23 ms
+
+traffic100000.csv
+
+selection finish 15173 ms
+quick finish 48893 ms
+merge finish 40 ms
+
+selection finish 15588 ms
+quick finish 48926 ms
+merge finish 34 ms
+
+selection finish 15368 ms
+quick finish 48027 ms
+merge finish 31 ms
+
+selection finish 15135 ms
+quick finish 47899 ms
+merge finish 33 ms
+
+selection finish 15140 ms
+quick finish 49782 ms
+merge finish 33 ms
+
+trafficAll
+
+selection finish 95791 ms
+quick finish 306966 ms
+merge finish 65 ms
+
+selection finish 120415 ms
+quick finish 323396 ms
+merge finish 68 ms
+
+selection finish 118029 ms
+quick finish 323570 ms
+merge finish 57 ms
+
+selection finish 117941 ms
+quick finish 311425 ms
+merge finish 65 ms
+
+selection finish 113650 ms
+quick finish 324004 ms
+merge finish 63 ms

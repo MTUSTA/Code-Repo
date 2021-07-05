@@ -1,0 +1,42 @@
+1) (3 pts) Suppose that 100 people enter a contest and that different winners are 
+
+selected at random for first, second and third prizes. What is the probability 
+
+that Zeynep wins one of the prizes if she is one of the contestants?
+
+2) (3 pts) What is the probability that a die never shows an even number 
+
+when it is rolled six times?
+
+3) (3 pts) What is the probability that a positive integer not exceeding 100 
+
+selected at random is divisible by 5 or 7?
+
+4) (2 pts each) Two events E1 and E2 are called independent if p(E1∩E2)=p(E1)p(E2).
+For each of the following pairs of events, which are the subsets of the set 
+
+of all possible outcomes when a coin is tossed three times, determine 
+
+whether or not they are independent. 
+
+a) E1: the first coin comes up tails; E2: the second coin comes 
+
+up heads. 
+
+b) E1: the first coin comes up tails; E2: two, and not three, heads come 
+
+up in a row.
+
+c) E1: the second coin comes up tails; E2: two, and not three, heads come 
+
+up in a row.
+
+5) (2 pts each) What is the probability of these events when we randomly select 
+
+a permutation of {1,2,…,n} where n≥4?
+
+a) 1 precedes 2.
+
+b) n precedes 1 and n−1 precedes 2.
+
+c) n precedes 1 and n precedes 2. 

@@ -1,0 +1,116 @@
+sayi-11
+
+okunan dosya -TrafficFlow100
+selection 4 
+quick 1 
+merge 1 
+
+selection 3 
+quick 2 
+merge 1 
+
+selection 2 
+quick 2 
+merge 1 
+
+selection 3 
+quick 2 
+merge 2 
+
+selection 4 
+quick 2 
+merge 2 
+
+
+okunan dosya -TrafficFlow1000
+selection 42 
+quick 8 
+merge 3 
+
+selection 37 
+quick 6 
+merge 3 
+
+selection 46 
+quick 7 
+merge 3 
+
+selection 50 
+quick 10 
+merge 3 
+
+selection 48 
+quick 9 
+merge 4 
+
+
+okunan dosya -TrafficFlow50000
+
+selection 5430 
+quick 2145 
+merge 27 
+ 
+selection 5657 
+quick 2122 
+merge 26 
+ 
+selection 5617 
+quick 2140 
+merge 29 
+
+selection 5424 
+quick 2166 
+merge 25 
+
+
+selection 5577 
+quick 2113 
+merge 24
+
+
+okunan dosya -TrafficFlow100000
+
+selection 29602 
+quick 9753 
+merge 36 
+
+selection 30514 
+quick 9413 
+merge 35 
+
+selection 31139 
+quick 9535 
+merge 38 
+
+selection 29238 
+quick 9452 
+merge 36 
+
+selection 29318 
+quick 9929 
+merge 39 
+
+
+okunan dosya - TrafficFlowAll
+
+selection 216792 
+quick 37579 
+merge 77
+
+selection 160441 
+quick 30653  
+merge 78 
+
+selection 217704  
+quick 35066 
+merge 77
+
+selection 201192
+quick 31120 
+merge 70
+
+selection  221850 ms
+quick  32993 ms
+merge  72 ms
+
+

@@ -1,0 +1,22 @@
+Burak Bulut,Denizli,Pamukkale,37,0
+Lionel Maradona,Pamukkale,Denizli,55,0
+Karim Benzema,Tavas,Municipality Sports,61,1
+Robert Lewandowski,Municipality Sports,Tavas,67,1
+Carlos Tevez,Municipality Sports,Tavas,90,1
+Christiano Gomez,Denizli,Tavas,45,2
+Diego Costa,Tavas,Denizli,75,2
+Sergio Aguero,Pamukkale,Municipality Sports,01,3
+Carlos Tevez,Municipality Sports,Pamukkale,12,3
+Burak Bulut,Denizli,Municipality Sports,15,4
+Robin Fernando,Denizli,Municipality Sports,21,4
+Diego Costa,Tavas,Pamukkale,17,5
+Diego Costa,Tavas,Pamukkale,25,5
+Sergio Aguero,Pamukkale,Tavas,45,5
+Diego Costa,Tavas,Pamukkale,60,5
+Robin Fernando,Denizli,Pamukkale,45,6
+Alexandre Lacazette,Municipality Sports,Tavas,90,7
+Karim Benzema,Tavas,Denizli,76,8
+Robert Lewandowski,Municipality Sports,Pamukkale,37,9
+Luis Suarez,Pamukkale,Municipality Sports,45,9
+Robert Lewandowski,Municipality Sports,Pamukkale,84,9
+Robert Lewandowski,Municipality Sports,Pamukkale,90,9

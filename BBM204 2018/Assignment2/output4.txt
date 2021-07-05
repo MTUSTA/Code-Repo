@@ -1,0 +1,18 @@
+Memory 4
+SecondChance Page Replacement
+Binary Search Tree
+Page Fault	 a
+Page Fault	 a c
+          	 a c
+Page Fault	 a c b
+Page Fault	 a c b k
+          	 a c b k
+Page Fault	 a c d k Second Chance a c
+Page Fault	 a c d p
+Page Fault	 y c d p
+Page Fault	 y b d p
+          	 y b d p
+Page Fault	 y b e p
+Page Fault	 t b e p Second Chance p
+Page Fault	 t c e p
+11

@@ -1,0 +1,9 @@
+8
+MESSAGE C E #A few small hops for frames, but a giant leap for this message.#
+SHOW_FRAME_INFO C out 3
+SHOW_Q_INFO C out
+SHOW_Q_INFO C in
+SHOW_FRAME_INFO C in 5
+SEND C
+PRINT_LOG D
+ORDER pizza

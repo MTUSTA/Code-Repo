@@ -1,0 +1,30 @@
+"oznur" was added
+"cemil" was added
+"cemile" was added
+"ozge" was added
+"selim" was added
+"selma" was added
+"oznur" reserved username
+"cem" was added
+"cemal" was added
+"cemilet" was added
+"hakan" no record
+"sel" not enough username
+"ozge" password "612"
+"selam" incorrect username
+"alaeddin" no record
+"seli" not enough username
+"selma" incorrect password
+"cemal" successful login
+"ozgen" incorrect username
+"yildiz" no record
+"cihan" incorrect username
+"oz" not enough username
+"selim" deletion is successful
+-oz
+	-oznur
+	-ozge
+-cem
+	-cemil,cemile, cemilet
+	-cemal
+-selma

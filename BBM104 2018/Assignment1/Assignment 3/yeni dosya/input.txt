@@ -1,0 +1,15 @@
+AddCustomer 33 Hakan Altun 234-5677896 Ayranci 10. sok. 30/10
+AddCustomer 88 Berdan Mardini 568-8964142 Bilkent 32 cd. 72/3
+RemoveCustomer 46
+CreateOrder 7 50
+AddPizza 7 AmericanPan HotPepper Soudjouk
+AddPizza 7 Neapolitan HotPepper Onion
+AddDrink 7
+PayCheck 7
+CreateOrder 8 42
+AddPizza 8 AmericanPan Soudjouk
+PayCheck 8
+CreateOrder 10 33
+AddPizza 10 Neapolitan
+PayCheck 10
+List Customers

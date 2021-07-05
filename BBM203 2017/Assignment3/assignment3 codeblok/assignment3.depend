@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1512285623 source:c:\users\mehmet taha usta\desktop\codeblocks projeleri\assignment3\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<ctype.h>
+	<string.h>
+

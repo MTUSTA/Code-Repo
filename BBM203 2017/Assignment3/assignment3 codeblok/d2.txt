@@ -1,0 +1,2 @@
+This is testing for printf... This is testing for scanf... char strings and char. fgetc(file) to5 blah
+blah blah blah blah the and

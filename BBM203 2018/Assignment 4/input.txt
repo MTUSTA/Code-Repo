@@ -1,0 +1,24 @@
+-a oznur 212
+-a cemil 007
+-a cemile 009
+-a ozge 612
+-a selim 001
+-a selma 100
+-a oznur 050
+-a cem 602
+-a cemal 302
+-a cemilet 817
+-s hakan
+-s sel
+-s ozge
+-s selam
+-q alaeddin 155
+-q seli 112
+-q selma 111
+-q cemal 302
+-q ozgen 6230
+-d yildiz
+-d cihan
+-d oz
+-d selim
+-l

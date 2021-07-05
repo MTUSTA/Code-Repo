@@ -1,0 +1,54 @@
+1)THE MOST SCORED HALF
+0
+2)GOAL SCORER
+Eralp Arabaci
+3)THE NAMES OF FOOTBALLERS WHO SCORED HAT-TRICK
+Eralp Arabaci
+4)LIST OF TEAMS
+Kiziloren Spor
+Merzifon Spor
+Koycegiz Spor
+Aglasun Spor
+5)LIST OF FOOTBALLERS
+Akbatu Cirak
+Akintan Ors
+Aymete Evren
+Baranalp Pamuk
+Barcin Taner
+Burak Yilmaz
+Cagman Kayhan
+Efe Pehlivanli
+Eralp Arabaci
+Erun Erdogan
+Konuralp Kizilca
+Kutsay Yakali
+Noyan Aktan
+Sezgin Baydogan
+Sumer Gencturk
+Tamay Cerid
+Toker Atkin
+Yagiz Baykal
+Yucel Gencturk
+Zeynel Olmez
+6)MATCHES OF GIVEN FOOTBALLER
+Matches of Zeynel Olmez
+Footballer Name: Zeynel Olmez,Away Team: Kiziloren Spor,Min of Goal: 29,Match ID: 2
+Footballer Name: Zeynel Olmez,Away Team: Kiziloren Spor,Min of Goal: 50,Match ID: 2
+Footballer Name: Zeynel Olmez,Away Team: Aglasun Spor,Min of Goal: 20,Match ID: 10
+Matches of Baranalp Pamuk
+Footballer Name: Baranalp Pamuk,Away Team: Merzifon Spor,Min of Goal: 24,Match ID: 2
+Footballer Name: Baranalp Pamuk,Away Team: Merzifon Spor,Min of Goal: 67,Match ID: 8
+7)ASCENDING ORDER ACCORDING TO MATCH ID
+footballer Name: Eralp Arabaci,Match ID: 2
+footballer Name: Eralp Arabaci,Match ID: 5
+footballer Name: Eralp Arabaci,Match ID: 11
+footballer Name: Aymete Evren,Match ID: 0
+footballer Name: Aymete Evren,Match ID: 6
+footballer Name: Aymete Evren,Match ID: 11
+8)DESCENDING ORDER ACCORDING TO MATCH ID
+footballer Name: Efe Pehlivanli,Match ID: 9
+footballer Name: Efe Pehlivanli,Match ID: 7
+footballer Name: Efe Pehlivanli,Match ID: 4
+footballer Name: Eralp Arabaci,Match ID: 11
+footballer Name: Eralp Arabaci,Match ID: 5
+footballer Name: Eralp Arabaci,Match ID: 2

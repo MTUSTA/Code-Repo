@@ -1,0 +1,10 @@
+D D S T W S \ T W S
+S W T D S / T S D T
+D D S T / S D T W S
+S W T D S W T S D T
+T D + T D D S D T |
+/ D - - + S D T W S
++ W D D S W T S D T
+W D S T D D S + T S
+D D S T W S D + W S
+D + \ - W S D | W S
