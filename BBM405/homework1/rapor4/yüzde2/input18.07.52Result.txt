@@ -1,0 +1,70 @@
+dictionary size=  100
+list element size=  1000 
+
+Start value = X  Goal value = S 
+
+Expand Node | Fringe
+--------------------
+-           | (72, 'X')
+X           | (47, 'Y17'), (531, 'X7')
+Y17         | (335, 'K'), (531, 'X7')
+K           | (531, 'X7'), (667, 'U0'), (569, 'Z20'), (1165, 'K6'), (1306, 'Z10'), (1311, 'T4')
+X7          | (569, 'Z20'), (667, 'U0'), (1311, 'T4'), (1165, 'K6'), (1306, 'Z10')
+Z20         | (667, 'U0'), (849, 'S'), (1311, 'T4'), (1306, 'Z10'), (1165, 'K6')
+U0          | (738, 'A'), (849, 'S'), (1311, 'T4'), (1306, 'Z10'), (1165, 'K6')
+A           | (727, 'W8'), (933, 'Q6'), (849, 'S'), (1120, 'I0'), (991, 'P21'), (1311, 'T4'), (1031, 'T22'), (1306, 'Z10'), (1165, 'K6'), (1424, 'B12'), (1081, 'M11'), (1627, 'D0'), (1338, 'V24'), (1532, 'F0')
+W8          | (849, 'S'), (933, 'Q6'), (1031, 'T22'), (1120, 'I0'), (991, 'P21'), (1311, 'T4'), (1437, 'C'), (1306, 'Z10'), (1165, 'K6'), (1424, 'B12'), (1081, 'M11'), (1627, 'D0'), (1338, 'V24'), (1532, 'F0')
+S           | 
+Path: X => Y17 => K => Z20 => S
+Cost: 821
+
+AStar algorithm --- 0 nano seconds ---
+
+AStar algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | X
+X           | Y17, X7
+X7          | Y17
+Y17         | K
+K           | Z20, K6, Z10, T4, U0
+U0          | A, Z20, K6, Z10, T4
+T4          | A, Z20, K6, Z10
+Z10         | A, Z20, K6
+K6          | A, Z20
+Z20         | S, A
+A           | B12, W8, P21, F0, V24, M11, Q6, T22, D0, I0, S
+S           | 
+Path: X => Y17 => K => Z20 => S
+
+BFS algorithm --- 1000800 nano seconds ---
+
+BFS algorithm --- 0.0010008 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | (0, 'X')
+X           | (35, 'Y17'), (510, 'X7')
+Y17         | (510, 'X7')
+X7          | 
+No path from X to S
+
+UCS algorithm --- 0 nano seconds ---
+
+UCS algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | X
+X           | X7, Y17
+Y17         | X7, K
+K           | X7, U0, T4, Z10, K6, Z20
+Z20         | X7, U0, T4, Z10, K6, S
+S           | 
+Path: X => Y17 => K => Z20 => S
+
+DFS algorithm --- 0 nano seconds ---
+
+DFS algorithm --- 0.0 seconds ---
+

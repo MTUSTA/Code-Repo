@@ -1,0 +1,49 @@
+dictionary size=  100000
+list element size=  10000 
+
+Start value = Z  Goal value = X 
+
+Expand Node | Fringe
+--------------------
+-           | (98700, 'Z')
+Z           | (25740, 'Z4')
+Z4          | 
+No path from Z to X
+
+AStar algorithm --- 0 nano seconds ---
+
+AStar algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | Z
+Z           | Z4
+Z4          | 
+No path from Z to X
+
+BFS algorithm --- 0 nano seconds ---
+
+BFS algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | (0, 'Z')
+Z           | (6963, 'Z4')
+Z4          | 
+No path from Z to X
+
+UCS algorithm --- 0 nano seconds ---
+
+UCS algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | Z
+Z           | Z4
+Z4          | 
+No path from Z to X
+
+DFS algorithm --- 0 nano seconds ---
+
+DFS algorithm --- 0.0 seconds ---
+

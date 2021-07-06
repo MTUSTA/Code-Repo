@@ -1,0 +1,75 @@
+dictionary size=  100
+list element size=  10000 
+
+Start value = B  Goal value = Z 
+
+Expand Node | Fringe
+--------------------
+-           | (53, 'B')
+B           | (2897, 'Z'), (4197, 'D'), (3240, 'U'), (5987, 'O'), (4969, 'C'), (5776, 'M'), (3316, 'P')
+Z           | 
+Path: B => Z
+Cost: 2821
+
+AStar algorithm --- 0 nano seconds ---
+
+AStar algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | B
+B           | M, P, Z, D, O, C, U
+U           | R, K, S, I, N, Q, J, W, M, P, Z, D, O, C
+C           | G, V, L, R, K, S, I, N, Q, J, W, M, P, Z, D, O
+O           | G, V, L, R, K, S, I, N, Q, J, W, M, P, Z, D
+D           | H, Y, E, F, G, V, L, R, K, S, I, N, Q, J, W, M, P, Z
+Z           | 
+Path: B => Z
+
+BFS algorithm --- 1001600 nano seconds ---
+
+BFS algorithm --- 0.0010016 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | (0, 'B')
+B           | (2821, 'Z'), (4100, 'D'), (3179, 'U'), (5921, 'O'), (4944, 'C'), (5704, 'M'), (3293, 'P')
+Z           | 
+Path: B => Z
+Cost: 2821
+
+UCS algorithm --- 0 nano seconds ---
+
+UCS algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | B
+B           | U, C, O, D, Z, P, M
+M           | U, C, O, D, Z, P, G, I, X
+X           | U, C, O, D, Z, P, G, I, W, Y, L, E, V
+V           | U, C, O, D, Z, P, G, I, W, Y, L, E, N, S, A, H
+H           | U, C, O, D, Z, P, G, I, W, Y, L, E, N, S, A, T, K
+K           | U, C, O, D, Z, P, G, I, W, Y, L, E, N, S, A, T, J, F, Q
+Q           | U, C, O, D, Z, P, G, I, W, Y, L, E, N, S, A, T, J, F, R
+R           | U, C, O, D, Z, P, G, I, W, Y, L, E, N, S, A, T, J, F
+F           | U, C, O, D, Z, P, G, I, W, Y, L, E, N, S, A, T, J
+J           | U, C, O, D, Z, P, G, I, W, Y, L, E, N, S, A, T
+T           | U, C, O, D, Z, P, G, I, W, Y, L, E, N, S, A
+A           | U, C, O, D, Z, P, G, I, W, Y, L, E, N, S
+S           | U, C, O, D, Z, P, G, I, W, Y, L, E, N
+N           | U, C, O, D, Z, P, G, I, W, Y, L, E
+E           | U, C, O, D, Z, P, G, I, W, Y, L
+L           | U, C, O, D, Z, P, G, I, W, Y
+Y           | U, C, O, D, Z, P, G, I, W
+W           | U, C, O, D, Z, P, G, I
+I           | U, C, O, D, Z, P, G
+G           | U, C, O, D, Z, P
+P           | U, C, O, D, Z
+Z           | 
+Path: B => Z
+
+DFS algorithm --- 998600 nano seconds ---
+
+DFS algorithm --- 0.0009986 seconds ---
+

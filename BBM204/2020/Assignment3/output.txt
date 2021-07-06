@@ -1,0 +1,30 @@
+Graph structure:
+a(4)-->b j
+b(6)-->a g c
+c(3)-->b d e
+d(2)-->c e f
+e(1)-->g f c d
+f(4)-->e d i
+g(2)-->b e h j
+h(8)-->g i
+i(5)-->h f
+j(4)-->a g
+Broadcast steps:
+a-->b j
+b-->g c
+g-->e h
+c-->d
+e-->f
+h-->i
+Message passing:
+i--->[i,5]--->h
+f--->[f,4]--->e
+d--->[d,2]--->c
+h--->[h,8]--->g
+e--->[f,4]--->g
+c--->[c,3]--->b
+g--->[h,8]--->b
+j--->[j,4]--->a
+b--->[h,8]--->a
+Best node-->h
+Possible roots-->g, b

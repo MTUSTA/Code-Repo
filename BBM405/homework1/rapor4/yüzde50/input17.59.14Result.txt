@@ -1,0 +1,47 @@
+dictionary size=  1000000
+list element size=  10 
+
+Start value = A  Goal value = A 
+
+Expand Node | Fringe
+--------------------
+-           | (162325, 'A')
+A           | 
+Path: A
+Cost: 0
+
+AStar algorithm --- 0 nano seconds ---
+
+AStar algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | A
+A           | 
+Path: A
+
+BFS algorithm --- 0 nano seconds ---
+
+BFS algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | (0, 'A')
+A           | 
+Path: A
+Cost: 0
+
+UCS algorithm --- 0 nano seconds ---
+
+UCS algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | A
+A           | 
+Path: A
+
+DFS algorithm --- 0 nano seconds ---
+
+DFS algorithm --- 0.0 seconds ---
+

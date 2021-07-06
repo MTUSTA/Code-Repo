@@ -1,0 +1,45 @@
+dictionary size=  10
+list element size=  100 
+
+Start value = Y  Goal value = X 
+
+Expand Node | Fringe
+--------------------
+-           | (4, 'Y')
+Y           | 
+No path from Y to X
+
+AStar algorithm --- 0 nano seconds ---
+
+AStar algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | Y
+Y           | 
+No path from Y to X
+
+BFS algorithm --- 0 nano seconds ---
+
+BFS algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | (0, 'Y')
+Y           | 
+No path from Y to X
+
+UCS algorithm --- 0 nano seconds ---
+
+UCS algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | Y
+Y           | 
+No path from Y to X
+
+DFS algorithm --- 0 nano seconds ---
+
+DFS algorithm --- 0.0 seconds ---
+

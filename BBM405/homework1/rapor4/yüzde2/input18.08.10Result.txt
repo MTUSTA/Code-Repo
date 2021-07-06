@@ -1,0 +1,45 @@
+dictionary size=  10
+list element size=  10 
+
+Start value = Z  Goal value = E 
+
+Expand Node | Fringe
+--------------------
+-           | (6, 'Z')
+Z           | 
+No path from Z to E
+
+AStar algorithm --- 0 nano seconds ---
+
+AStar algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | Z
+Z           | 
+No path from Z to E
+
+BFS algorithm --- 0 nano seconds ---
+
+BFS algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | (0, 'Z')
+Z           | 
+No path from Z to E
+
+UCS algorithm --- 0 nano seconds ---
+
+UCS algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | Z
+Z           | 
+No path from Z to E
+
+DFS algorithm --- 0 nano seconds ---
+
+DFS algorithm --- 0.0 seconds ---
+

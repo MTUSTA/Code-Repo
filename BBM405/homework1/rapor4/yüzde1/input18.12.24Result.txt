@@ -1,0 +1,98 @@
+dictionary size=  10000
+list element size=  1000000 
+
+Start value = L  Goal value = R 
+
+Expand Node | Fringe
+--------------------
+-           | (4769, 'L')
+L           | (151293, 'V0'), (235111, 'M6')
+V0          | (235111, 'M6')
+M6          | (1108987, 'F')
+F           | (1432033, 'H5'), (1478879, 'J18'), (2057576, 'K6'), (1691161, 'R2')
+H5          | (1478879, 'J18'), (1691161, 'R2'), (2057576, 'K6')
+J18         | (1691161, 'R2'), (2057576, 'K6'), (2169241, 'C')
+R2          | (2057576, 'K6'), (2169241, 'C')
+K6          | (2169241, 'C')
+C           | (2194262, 'L10'), (2252275, 'T11'), (3043827, 'Q4'), (2888949, 'L8'), (2441603, 'X3')
+L10         | (2252275, 'T11'), (2441603, 'X3'), (3043827, 'Q4'), (2888949, 'L8')
+T11         | (2441603, 'X3'), (2888949, 'L8'), (3043827, 'Q4')
+X3          | (2888949, 'L8'), (3043827, 'Q4')
+L8          | (2907495, 'J'), (3043827, 'Q4')
+J           | (3043827, 'Q4'), (3606987, 'J1'), (3652431, 'Q12'), (3908597, 'W7')
+Q4          | (3606987, 'J1'), (3908597, 'W7'), (3652431, 'Q12')
+J1          | (3652431, 'Q12'), (3908597, 'W7')
+Q12         | (3908597, 'W7')
+W7          | 
+No path from L to R
+
+AStar algorithm --- 0 nano seconds ---
+
+AStar algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | L
+L           | V0, M6
+M6          | F, V0
+V0          | F
+F           | K6, H5, J18, R2
+R2          | K6, H5, J18
+J18         | C, K6, H5
+H5          | C, K6
+K6          | C
+C           | L10, Q4, L8, X3, T11
+T11         | L10, Q4, L8, X3
+X3          | L10, Q4, L8
+L8          | J, L10, Q4
+Q4          | J, L10
+L10         | J
+J           | W7, Q12, J1
+J1          | W7, Q12
+Q12         | W7
+W7          | 
+No path from L to R
+
+BFS algorithm --- 0 nano seconds ---
+
+BFS algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | (0, 'L')
+L           | (142421, 'V0'), (226026, 'M6')
+V0          | (226026, 'M6')
+M6          | 
+No path from L to R
+
+UCS algorithm --- 0 nano seconds ---
+
+UCS algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | L
+L           | M6, V0
+V0          | M6
+M6          | F
+F           | R2, J18, H5, K6
+K6          | R2, J18, H5
+H5          | R2, J18
+J18         | R2, C
+C           | R2, T11, X3, L8, Q4, L10
+L10         | R2, T11, X3, L8, Q4
+Q4          | R2, T11, X3, L8
+L8          | R2, T11, X3, J
+J           | R2, T11, X3, J1, Q12, W7
+W7          | R2, T11, X3, J1, Q12
+Q12         | R2, T11, X3, J1
+J1          | R2, T11, X3
+X3          | R2, T11
+T11         | R2
+R2          | 
+No path from L to R
+
+DFS algorithm --- 0 nano seconds ---
+
+DFS algorithm --- 0.0 seconds ---
+

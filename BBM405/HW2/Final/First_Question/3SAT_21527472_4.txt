@@ -1,0 +1,8 @@
+(declare-fun A () Bool)
+(declare-fun C () Bool)
+(declare-fun D () Bool)
+(declare-fun E () Bool)
+(declare-fun F () Bool)
+(assert (and (or A (not F) C) (or (not E) A (not D)) (or D (not C) (not A))))
+(check-sat)
+(get-model)

@@ -1,0 +1,53 @@
+dictionary size=  10000
+list element size=  100 
+
+Start value = W  Goal value = U 
+
+Expand Node | Fringe
+--------------------
+-           | (1596, 'W')
+W           | (1703, 'Z22'), (5319, 'Y8')
+Z22         | (5319, 'Y8')
+Y8          | 
+No path from W to U
+
+AStar algorithm --- 0 nano seconds ---
+
+AStar algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | W
+W           | Y8, Z22
+Z22         | Y8
+Y8          | 
+No path from W to U
+
+BFS algorithm --- 0 nano seconds ---
+
+BFS algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | (0, 'W')
+W           | (31, 'Z22'), (54, 'Y8')
+Z22         | (54, 'Y8')
+Y8          | 
+No path from W to U
+
+UCS algorithm --- 0 nano seconds ---
+
+UCS algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | W
+W           | Z22, Y8
+Y8          | Z22
+Z22         | 
+No path from W to U
+
+DFS algorithm --- 0 nano seconds ---
+
+DFS algorithm --- 0.0 seconds ---
+

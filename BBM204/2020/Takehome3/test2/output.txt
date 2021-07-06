@@ -1,0 +1,6 @@
+Q1
+3
+Q2
+Graph is two-edge connected
+Q3
+True

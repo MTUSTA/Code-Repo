@@ -1,0 +1,4 @@
+select Count(region) from customers where region is null
+select count(*) customers
+
+iç içe regionla ilgili

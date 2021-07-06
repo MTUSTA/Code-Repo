@@ -1,0 +1,15 @@
+(declare-fun D () Bool)
+(declare-fun F () Bool)
+(declare-fun E () Bool)
+(declare-fun B () Bool)
+(declare-fun C () Bool)
+(declare-fun A () Bool)
+(assert (let ((a!1 (=> (and (=> B (not C)) (=> (not C) B)) D))
+      (a!2 (=> D (and (=> B (not C)) (=> (not C) B)))))
+  (and (or A (not B) C)
+       a!1
+       a!2
+       (=> (not D) (=> E (not F)))
+       (=> (=> E (not F)) (not D)))))
+(check-sat)
+(get-model)

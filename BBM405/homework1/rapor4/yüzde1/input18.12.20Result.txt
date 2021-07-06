@@ -1,0 +1,70 @@
+dictionary size=  1000000
+list element size=  10000 
+
+Start value = Q  Goal value = R 
+
+Expand Node | Fringe
+--------------------
+-           | (96050, 'Q')
+Q           | (768675, 'Q4')
+Q4          | (992121, 'I')
+I           | (56874, 'Y16'), (517131, 'M4'), (88027, 'S21'), (902694, 'I8'), (577267, 'S19'), (845042, 'Q14')
+Y16         | (88027, 'S21'), (517131, 'M4'), (845042, 'Q14'), (902694, 'I8'), (577267, 'S19')
+S21         | (517131, 'M4'), (577267, 'S19'), (845042, 'Q14'), (902694, 'I8')
+M4          | (577267, 'S19'), (902694, 'I8'), (845042, 'Q14')
+S19         | (845042, 'Q14'), (902694, 'I8')
+Q14         | (902694, 'I8')
+I8          | 
+No path from Q to R
+
+AStar algorithm --- 0 nano seconds ---
+
+AStar algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | Q
+Q           | Q4
+Q4          | I
+I           | Q14, M4, Y16, S19, I8, S21
+S21         | Q14, M4, Y16, S19, I8
+I8          | Q14, M4, Y16, S19
+S19         | Q14, M4, Y16
+Y16         | Q14, M4
+M4          | Q14
+Q14         | 
+No path from Q to R
+
+BFS algorithm --- 0 nano seconds ---
+
+BFS algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | (0, 'Q')
+Q           | (1611, 'Q4')
+Q4          | 
+No path from Q to R
+
+UCS algorithm --- 0 nano seconds ---
+
+UCS algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | Q
+Q           | Q4
+Q4          | I
+I           | S21, I8, S19, Y16, M4, Q14
+Q14         | S21, I8, S19, Y16, M4
+M4          | S21, I8, S19, Y16
+Y16         | S21, I8, S19
+S19         | S21, I8
+I8          | S21
+S21         | 
+No path from Q to R
+
+DFS algorithm --- 0 nano seconds ---
+
+DFS algorithm --- 0.0 seconds ---
+

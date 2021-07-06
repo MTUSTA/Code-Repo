@@ -1,0 +1,76 @@
+dictionary size=  10000
+list element size=  1000000 
+
+Start value = T  Goal value = B 
+
+Expand Node | Fringe
+--------------------
+-           | (3191, 'T')
+T           | (185743, 'Z14')
+Z14         | (534083, 'X'), (576265, 'W')
+X           | (576265, 'W'), (1492120, 'X8')
+W           | (634328, 'Y25'), (1492120, 'X8'), (1074199, 'Z3')
+Y25         | (1074199, 'Z3'), (1492120, 'X8')
+Z3          | (1492120, 'X8')
+X8          | (2218299, 'J')
+J           | (2573250, 'S15'), (3082213, 'P12'), (3035119, 'L22')
+S15         | (3035119, 'L22'), (3082213, 'P12')
+L22         | (3082213, 'P12')
+P12         | 
+No path from T to B
+
+AStar algorithm --- 0 nano seconds ---
+
+AStar algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | T
+T           | Z14
+Z14         | X, W
+W           | Z3, Y25, X
+X           | X8, Z3, Y25
+Y25         | X8, Z3
+Z3          | X8
+X8          | J
+J           | S15, L22, P12
+P12         | S15, L22
+L22         | S15
+S15         | 
+No path from T to B
+
+BFS algorithm --- 0 nano seconds ---
+
+BFS algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | (0, 'T')
+T           | (181022, 'Z14')
+Z14         | 
+No path from T to B
+
+UCS algorithm --- 0 nano seconds ---
+
+UCS algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | T
+T           | Z14
+Z14         | W, X
+X           | W, X8
+X8          | W, J
+J           | W, P12, L22, S15
+S15         | W, P12, L22
+L22         | W, P12
+P12         | W
+W           | Y25, Z3
+Z3          | Y25
+Y25         | 
+No path from T to B
+
+DFS algorithm --- 0 nano seconds ---
+
+DFS algorithm --- 0.0 seconds ---
+

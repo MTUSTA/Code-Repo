@@ -1,0 +1,57 @@
+dictionary size=  10000
+list element size=  10 
+
+Start value = N  Goal value = K 
+
+Expand Node | Fringe
+--------------------
+-           | (8337, 'N')
+N           | (1163, 'Q11'), (1227, 'N22'), (1670, 'V23')
+Q11         | (1227, 'N22'), (1670, 'V23')
+N22         | (1670, 'V23')
+V23         | 
+No path from N to K
+
+AStar algorithm --- 0 nano seconds ---
+
+AStar algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | N
+N           | Q11, N22, V23
+V23         | Q11, N22
+N22         | Q11
+Q11         | 
+No path from N to K
+
+BFS algorithm --- 0 nano seconds ---
+
+BFS algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | (0, 'N')
+N           | (3, 'Q11'), (6, 'N22'), (3, 'V23')
+Q11         | (3, 'V23'), (6, 'N22')
+V23         | (6, 'N22')
+N22         | 
+No path from N to K
+
+UCS algorithm --- 0 nano seconds ---
+
+UCS algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | N
+N           | V23, N22, Q11
+Q11         | V23, N22
+N22         | V23
+V23         | 
+No path from N to K
+
+DFS algorithm --- 0 nano seconds ---
+
+DFS algorithm --- 0.0 seconds ---
+

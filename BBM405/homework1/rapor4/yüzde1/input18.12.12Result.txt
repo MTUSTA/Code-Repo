@@ -1,0 +1,49 @@
+dictionary size=  100
+list element size=  100000 
+
+Start value = V  Goal value = F 
+
+Expand Node | Fringe
+--------------------
+-           | (15, 'V')
+V           | (53048, 'X18')
+X18         | 
+No path from V to F
+
+AStar algorithm --- 0 nano seconds ---
+
+AStar algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | V
+V           | X18
+X18         | 
+No path from V to F
+
+BFS algorithm --- 1000300 nano seconds ---
+
+BFS algorithm --- 0.0010003 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | (0, 'V')
+V           | (52950, 'X18')
+X18         | 
+No path from V to F
+
+UCS algorithm --- 0 nano seconds ---
+
+UCS algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | V
+V           | X18
+X18         | 
+No path from V to F
+
+DFS algorithm --- 0 nano seconds ---
+
+DFS algorithm --- 0.0 seconds ---
+

@@ -1,0 +1,14 @@
+n-gram based phishing detection via TST
+
+Legitimate training file has been loaded with [3000] instances
+Legitimate test file has been loaded with [500] instances
+Phishing training file has been loaded with [3000] instances
+Phishing test file has been loaded with [500] instances
+TST has been loaded with 3000 n-grams
+TST has been loaded with 3000 n-grams
+5000 strong phishing n-grams have been saved to the file"strong_phishing_features.txt"
+5000 strong legitimate n-grams have been saved to the file "strong_legitmate_features.txt"
+118544 n-grams + weights have been saved to the file "all_feature_weights.txt"
+109562 insignificant n-grams have been removed from the TST
+TP:448 FN:52 TN:452 FP:48 Unpredictable Phishing:0 Unpredictable Legitimate:1
+Accuracy: 0.8991009

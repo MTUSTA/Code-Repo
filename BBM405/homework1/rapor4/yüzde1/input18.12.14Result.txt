@@ -1,0 +1,91 @@
+dictionary size=  10000
+list element size=  100 
+
+Start value = M  Goal value = A 
+
+Expand Node | Fringe
+--------------------
+-           | (7140, 'M')
+M           | (1216, 'Z5'), (1673, 'Q21'), (4355, 'U0'), (2183, 'S8')
+Z5          | (1673, 'Q21'), (2183, 'S8'), (4355, 'U0')
+Q21         | (1145, 'O'), (4355, 'U0'), (2183, 'S8')
+O           | (1699, 'S1'), (4355, 'U0'), (2183, 'S8'), (8230, 'S10'), (8444, 'Y8'), (9054, 'Z20')
+S1          | (2183, 'S8'), (4355, 'U0'), (9054, 'Z20'), (8230, 'S10'), (8444, 'Y8')
+S8          | (4355, 'U0'), (8230, 'S10'), (9054, 'Z20'), (8444, 'Y8')
+U0          | (8230, 'S10'), (8444, 'Y8'), (9054, 'Z20')
+S10         | (8444, 'Y8'), (9054, 'Z20')
+Y8          | (4511, 'S'), (9054, 'Z20')
+S           | (755, 'W19'), (1503, 'T14'), (4782, 'S22'), (9054, 'Z20'), (8150, 'V1')
+W19         | (1503, 'T14'), (8150, 'V1'), (4782, 'S22'), (9054, 'Z20')
+T14         | (4782, 'S22'), (8150, 'V1'), (9054, 'Z20')
+S22         | (8150, 'V1'), (9054, 'Z20')
+V1          | (9054, 'Z20')
+Z20         | 
+No path from M to A
+
+AStar algorithm --- 1001100 nano seconds ---
+
+AStar algorithm --- 0.0010011 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | M
+M           | Z5, Q21, S8, U0
+U0          | Z5, Q21, S8
+S8          | Z5, Q21
+Q21         | O, Z5
+Z5          | O
+O           | Y8, Z20, S10, S1
+S1          | Y8, Z20, S10
+S10         | Y8, Z20
+Z20         | S, Y8
+Y8          | S
+S           | V1, W19, S22, T14
+T14         | V1, W19, S22
+S22         | V1, W19
+W19         | V1
+V1          | 
+No path from M to A
+
+BFS algorithm --- 0 nano seconds ---
+
+BFS algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | (0, 'M')
+M           | (14, 'Z5'), (74, 'Q21'), (95, 'U0'), (96, 'S8')
+Z5          | (74, 'Q21'), (96, 'S8'), (95, 'U0')
+Q21         | (95, 'U0'), (96, 'S8')
+U0          | (96, 'S8')
+S8          | 
+No path from M to A
+
+UCS algorithm --- 1005000 nano seconds ---
+
+UCS algorithm --- 0.001005 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | M
+M           | U0, S8, Q21, Z5
+Z5          | U0, S8, Q21
+Q21         | U0, S8, O
+O           | U0, S8, S1, S10, Z20, Y8
+Y8          | U0, S8, S1, S10, Z20, S
+S           | U0, S8, S1, S10, Z20, T14, S22, W19, V1
+V1          | U0, S8, S1, S10, Z20, T14, S22, W19
+W19         | U0, S8, S1, S10, Z20, T14, S22
+S22         | U0, S8, S1, S10, Z20, T14
+T14         | U0, S8, S1, S10, Z20
+Z20         | U0, S8, S1, S10
+S10         | U0, S8, S1
+S1          | U0, S8
+S8          | U0
+U0          | 
+No path from M to A
+
+DFS algorithm --- 0 nano seconds ---
+
+DFS algorithm --- 0.0 seconds ---
+

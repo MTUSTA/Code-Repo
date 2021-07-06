@@ -1,0 +1,75 @@
+dictionary size=  100000
+list element size=  1000000 
+
+Start value = C  Goal value = X 
+
+Expand Node | Fringe
+--------------------
+-           | (8486, 'C')
+C           | (125117, 'X'), (206093, 'Y'), (300107, 'B'), (552708, 'U'), (253322, 'R'), (1012721, 'I'), (785715, 'P'), (1015095, 'M'), (881441, 'A'), (1042433, 'N'), (263449, 'S')
+X           | 
+Path: C => X
+Cost: 98599
+
+AStar algorithm --- 0 nano seconds ---
+
+AStar algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | C
+C           | R, S, M, B, X, A, P, U, I, N, Y
+Y           | Q, G, J, R, S, M, B, X, A, P, U, I, N
+N           | E, W, V, H, Q, G, J, R, S, M, B, X, A, P, U, I
+I           | L, E, W, V, H, Q, G, J, R, S, M, B, X, A, P, U
+U           | Z, F, L, E, W, V, H, Q, G, J, R, S, M, B, X, A, P
+P           | Z, F, L, E, W, V, H, Q, G, J, R, S, M, B, X, A
+A           | T, O, Z, F, L, E, W, V, H, Q, G, J, R, S, M, B, X
+X           | 
+Path: C => X
+
+BFS algorithm --- 0 nano seconds ---
+
+BFS algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | (0, 'C')
+C           | (98599, 'X'), (151313, 'Y'), (260115, 'S'), (217258, 'R'), (944468, 'M'), (974986, 'N'), (462967, 'U'), (963356, 'I'), (764445, 'P')
+X           | 
+Path: C => X
+Cost: 98599
+
+UCS algorithm --- 0 nano seconds ---
+
+UCS algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | C
+C           | Y, N, I, U, P, A, X, B, M, S, R
+R           | Y, N, I, U, P, A, X, B, M, S, J, O, F, W
+W           | Y, N, I, U, P, A, X, B, M, S, J, O, F, T, Z, G, E, Q, D
+D           | Y, N, I, U, P, A, X, B, M, S, J, O, F, T, Z, G, E, Q, L, K
+K           | Y, N, I, U, P, A, X, B, M, S, J, O, F, T, Z, G, E, Q, L, H
+H           | Y, N, I, U, P, A, X, B, M, S, J, O, F, T, Z, G, E, Q, L
+L           | Y, N, I, U, P, A, X, B, M, S, J, O, F, T, Z, G, E, Q
+Q           | Y, N, I, U, P, A, X, B, M, S, J, O, F, T, Z, G, E
+E           | Y, N, I, U, P, A, X, B, M, S, J, O, F, T, Z, G, V
+V           | Y, N, I, U, P, A, X, B, M, S, J, O, F, T, Z, G
+G           | Y, N, I, U, P, A, X, B, M, S, J, O, F, T, Z
+Z           | Y, N, I, U, P, A, X, B, M, S, J, O, F, T
+T           | Y, N, I, U, P, A, X, B, M, S, J, O, F
+F           | Y, N, I, U, P, A, X, B, M, S, J, O
+O           | Y, N, I, U, P, A, X, B, M, S, J
+J           | Y, N, I, U, P, A, X, B, M, S
+S           | Y, N, I, U, P, A, X, B, M
+M           | Y, N, I, U, P, A, X, B
+B           | Y, N, I, U, P, A, X
+X           | 
+Path: C => X
+
+DFS algorithm --- 0 nano seconds ---
+
+DFS algorithm --- 0.0 seconds ---
+

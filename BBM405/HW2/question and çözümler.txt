@@ -1,0 +1,200 @@
+#p ⇔ q ≡ (p ⇒ q) ∧ (q ⇒ p)
+
+
+x, y = Ints('x y')
+s = Solver()
+s.add((x % 4) + 3 * (y / 2) > x - y)
+print(s.sexpr())
+-> cnf de and or not var.
+1) (30 points) Write 5 propositinal formulas in CNF and find the satisfying values. ---
+You should vary the number of clauses and number of variables. The grading will be based on the complexity of the formulas. 
+
+
+(¬A v B v C) ∧ (B v ¬C v D) ∧ (D v E v ¬F)
+
+(¬A v ¬B v C) ∧ (B v ¬C v ¬D) ∧ (¬D v E v ¬F)
+
+(A v ¬B v C) ∧ (¬B v C v ¬D) ∧ (D v ¬E v ¬F)
+
+(A v ¬F v C) ∧ (¬E v A v ¬D) ∧ (D v ¬C v ¬A)
+
+(F v D v ¬A) ∧ (B v F v E) ∧ (¬C v E v ¬B)
+
+2) (20 points) Write 5 unrestricted Propositional formulas (by using all possible operators) Convert them into CNF 
+Then, convert them into 3-SAT Find the values satisfying the original and the final formula to show that they are equisatisfiable. 
+
+
+(¬A <-> B -> C) ∧ (B -> ¬C <-> D) ∧ (D <-> E <-> ¬F)
+
+(¬A <-> B v C) ∧ (B -> ¬C -> D) ∧ (D v ¬E <-> ¬F)
+
+(A v ¬B v C) ∧ (B <-> ¬C <-> D) ∧ (¬D <-> E -> ¬F)
+
+(A -> ¬B v C) ∧ (F v ¬A -> D) ∧ (¬D -> E <-> A)
+
+(¬E v B -> C) ∧ (A v ¬C <-> D) ∧ (¬D <-> ¬E v F)
+
+
+
+site --> http://www.cs.toronto.edu/~victorn/tutorials/z3/SAT.html
+3) (40 points) Solve the 4-Queens problem by writing the corresponding rules
+
+(declare-const x1y1 Bool)
+(declare-const x1y2 Bool)
+(declare-const x1y3 Bool)
+(declare-const x1y4 Bool)
+(declare-const x2y1 Bool)
+(declare-const x2y2 Bool)
+(declare-const x2y3 Bool)
+(declare-const x2y4 Bool)
+(declare-const x3y1 Bool)
+(declare-const x3y2 Bool)
+(declare-const x3y3 Bool)
+(declare-const x3y4 Bool)
+(declare-const x4y1 Bool)
+(declare-const x4y2 Bool)
+(declare-const x4y3 Bool)
+(declare-const x4y4 Bool)
+
+(assert (or x1y1  x1y2  x1y3 x1y4))
+(assert (or x2y1  x2y2  x2y3 x2y4))
+(assert (or x3y1  x3y2  x3y3 x3y4))
+(assert (or x4y1  x4y2  x4y3 x4y4))
+
+
+(assert (not (or(and x1y1 x1y2)(and x1y1 x1y3)(and x1y1 x1y4)(and x1y2 x1y3)(and x1y2 x1y4 )(and x1y3 x1y4))))
+(assert (not (or(and x2y1 x2y2)(and x2y1 x2y3)(and x2y1 x2y4)(and x2y2 x2y3)(and x2y2 x2y4 )(and x2y3 x2y4))))
+(assert (not (or(and x3y1 x3y2)(and x3y1 x3y3)(and x3y1 x3y4)(and x3y2 x3y3)(and x3y2 x3y4 )(and x3y3 x3y4))))
+(assert (not (or(and x4y1 x4y2)(and x4y1 x4y3)(and x4y1 x4y4)(and x4y2 x4y3)(and x4y2 x4y4 )(and x4y3 x4y4))))
+
+
+(assert (not (or(and x1y1 x2y1)(and x1y1 x3y1)(and x1y1 x4y1)(and x2y1 x3y1)(and x2y1 x4y1)(and x3y1 x4y1))))
+(assert (not (or(and x1y2 x2y2)(and x1y2 x3y2)(and x1y2 x4y2)(and x2y2 x3y2)(and x2y2 x4y2)(and x3y2 x4y2))))
+(assert (not (or(and x1y3 x2y3)(and x1y3 x3y3)(and x1y3 x4y3)(and x2y3 x3y3)(and x2y3 x4y3)(and x3y3 x4y3))))
+(assert (not (or(and x1y4 x2y4)(and x1y4 x3y4)(and x1y4 x4y4)(and x2y4 x3y4)(and x2y4 x4y4)(and x3y4 x4y4))))
+
+
+(assert (not (or (and x1y1 x2y2) (and x1y1 x3y3) (and x1y1 x4y4) (and x2y2 x3y3) (and x2y2 x4y4) (and x3y3 x4y4))))
+(assert (not (or (and x1y2 x2y3) (and x1y2 x3y4) (and x2y3 x3y4))))
+(assert (not (or (and x1y3 x2y4))))
+(assert (not (or (and x2y1 x3y2) (and x2y1 x4y3) (and x3y2 x4y3))))
+(assert (not (or (and x3y1 x4y2))))
+(assert (not (or (and x2y2 x1y1) (and x3y3 x1y1) (and x4y4 x1y1) (and x3y3 x2y2) (and x4y4 x2y2) (and x4y4 x3y3))))
+(assert (not (or (and x2y3 x1y2) (and x3y4 x1y2) (and x3y4 x2y3))))
+(assert (not (or (and x2y4 x1y3))))
+(assert (not (or (and x3y2 x2y1) (and x4y3 x2y1) (and x4y3 x3y2))))
+(assert (not (or (and x4y2 x3y1))))
+
+(check-sat)
+(get-model)
+(exit)
+
+
+4) (10 points) Try larger N’s and send the result of largest N-Queen problem that you could get 
+The eight queens puzzle is the problem of placing eight chess queens on an 8×8 chessboard so that no two queens threaten each other; thus, a solution requires that no two queens share the same row, column, or diagonal.
+
+The problem of finding all solutions to the 8-queens problem can be quite computationally expensive, as there are 4,426,165,368 (i.e., 64C8) possible arrangements of eight queens on an 8×8 board, but only 92 solutions.
+
+
+
+5) (20 points) Bonus N-queens solution will output a single result. 
+Can you provide all solutions for 4-Queens problem. Clearly explain how yo do it.
+
+
+
+
+8-> quenn de 92 solution varmış
+
+p ⇔ q ≡ (p ⇒ q) ∧ (q ⇒ p)
+
+print(s.to_smt2())      ----> !!!!!!!!!!!!!!!
+
+p, q = Bools('p q')
+demorgan = And(p, q) == Not(Or(Not(p), Not(q)))
+print(demorgan)
+s = 0
+def prove(f):
+    global s
+    s = Solver()
+    s.add(Not(f))
+    if s.check() == unsat:
+        print("proved")
+
+    else:
+        print("failed to prove")
+
+
+print ("Proving demorgan...")
+prove(demorgan)
+print("-------------------------")
+print(s.sexpr())
+
+https://ericpony.github.io/z3py-tutorial/guide-examples.htm
+https://pclubiiti.github.io/blog/Inroduction-toSAT-solving/
+https://www.cs.tau.ac.il/~msagiv/courses/asv/z3py/guide-examples.htm
+http://www.cs.toronto.edu/~victorn/tutorials/z3_SAT_2019/index.html
+
+
+
+1 Quenn
+Found 1 solutions.
+--- 0.0 seconds ---
+
+2 Quenn
+Found 0 solutions.
+--- 0.0 seconds ---
+
+3 Quenn
+Found 0 solutions.
+--- 0.0 seconds ---
+
+4 Quenn
+Found 2 solutions.
+--- 0.0 seconds ---
+
+5 Quenn
+Found 10 solutions.
+--- 0.0 seconds ---
+
+6 Quenn
+Found 4 solutions.
+--- 0.0 seconds ---
+
+7 Quenn
+Found 40 solutions.
+--- 0.0 seconds ---
+
+8 Quenn
+Found 92 solutions.
+--- 0.03125476837158203 seconds ---
+
+9 Quenn
+Found 352 solutions.
+--- 0.1406242847442627 seconds ---
+
+Found 724 solutions.
+10 Quenn
+--- 0.5312545299530029 seconds ---
+
+
+11 Quenn
+Found 2680 solutions.
+--- 2.6406848430633545 seconds ---
+
+Found 14200 solutions.
+12 Quenn
+--- 15.578339338302612 seconds ---
+
+
+13 Quenn
+Found 73712 solutions.
+--- 97.642085313797 seconds ---
+
+14 Quenn
+Found 365596 solutions.
+--- 704.0002863407135 seconds ---
+
+15 Quenn
+--- 4990.465195178986 seconds ---
+
+

@@ -1,0 +1,61 @@
+dictionary size=  100000
+list element size=  10000 
+
+Start value = L  Goal value = N 
+
+Expand Node | Fringe
+--------------------
+-           | (74246, 'L')
+L           | (12352, 'U13'), (28009, 'Y24'), (46004, 'Q8'), (50291, 'Q7')
+U13         | (28009, 'Y24'), (50291, 'Q7'), (46004, 'Q8')
+Y24         | (46004, 'Q8'), (50291, 'Q7')
+Q8          | (50291, 'Q7')
+Q7          | 
+No path from L to N
+
+AStar algorithm --- 0 nano seconds ---
+
+AStar algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | L
+L           | Q8, Y24, Q7, U13
+U13         | Q8, Y24, Q7
+Q7          | Q8, Y24
+Y24         | Q8
+Q8          | 
+No path from L to N
+
+BFS algorithm --- 0 nano seconds ---
+
+BFS algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | (0, 'L')
+L           | (322, 'U13'), (1213, 'Y24'), (1672, 'Q7'), (7980, 'Q8')
+U13         | (1213, 'Y24'), (7980, 'Q8'), (1672, 'Q7')
+Y24         | (1672, 'Q7'), (7980, 'Q8')
+Q7          | (7980, 'Q8')
+Q8          | 
+No path from L to N
+
+UCS algorithm --- 0 nano seconds ---
+
+UCS algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | L
+L           | U13, Q7, Y24, Q8
+Q8          | U13, Q7, Y24
+Y24         | U13, Q7
+Q7          | U13
+U13         | 
+No path from L to N
+
+DFS algorithm --- 1000300 nano seconds ---
+
+DFS algorithm --- 0.0010003 seconds ---
+

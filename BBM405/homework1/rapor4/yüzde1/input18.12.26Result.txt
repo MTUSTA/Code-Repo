@@ -1,0 +1,49 @@
+dictionary size=  100000
+list element size=  1000 
+
+Start value = S  Goal value = Q 
+
+Expand Node | Fringe
+--------------------
+-           | (18352, 'S')
+S           | (37626, 'S22')
+S22         | 
+No path from S to Q
+
+AStar algorithm --- 0 nano seconds ---
+
+AStar algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | S
+S           | S22
+S22         | 
+No path from S to Q
+
+BFS algorithm --- 0 nano seconds ---
+
+BFS algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | (0, 'S')
+S           | (642, 'S22')
+S22         | 
+No path from S to Q
+
+UCS algorithm --- 0 nano seconds ---
+
+UCS algorithm --- 0.0 seconds ---
+
+Expand Node | Fringe
+--------------------
+-           | S
+S           | S22
+S22         | 
+No path from S to Q
+
+DFS algorithm --- 0 nano seconds ---
+
+DFS algorithm --- 0.0 seconds ---
+

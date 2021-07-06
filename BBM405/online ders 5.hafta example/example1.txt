@@ -1,0 +1,7 @@
+When is UCS equivalent to BFS?
+
+Can the complexity of UCS exceed the complexity of BFS?
+
+How to make DFS complete?
+
+When is DFS better than BFS?
