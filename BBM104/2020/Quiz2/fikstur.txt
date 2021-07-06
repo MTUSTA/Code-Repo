@@ -1,0 +1,24 @@
+I	Vancouver Canucks	Dallas Stars	3:0
+H	Nilufer Bld.	Guneysu	18:23
+H	Guneysu	IzmirBB	19:21
+V	Eczacibasi	Vakifbank	3:2
+I	Colorado Avalanche	Vancouver Canucks	2:1
+B	Karsiyaka	Bahcesehir	68:70
+H	Goztepe	IzmirBB	31:17
+I	Vancouver Canucks	St. Louis Blues	3:3
+V	Fenerbahce	Galatasaray	2:3
+I	Dallas Stars	Colorado Avalanche	2:3
+B	Karsiyaka	Galatasaray	75:83
+V	Fenerbahce	Vakifbank	1:3
+B	Galatasaray	Fenerbahce	95:80
+I	St. Louis Blues	Dallas Stars	1:4
+B	Fenerbahce	Karsiyaka	68:72
+V	Vakifbank	Galatasaray	2:3
+B	Bahcesehir	Fenerbahce	65:58
+B	Galatasaray	Bahcesehir	85:70
+V	Fenerbahce	Eczacibasi	1:3
+H	IzmirBB	Nilufer Bld.	25:25
+V	Galatasaray	Eczacibasi	3:1
+I	Colorado Avalanche	St. Louis Blues	2:0
+H	Nilufer Bld.	Goztepe	26:30
+H	Guneysu	Goztepe	22:14

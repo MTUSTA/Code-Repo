@@ -1,0 +1,12 @@
+---Hasan Uzun---
+Sweater	55.5	1	55.5
+Jeans	83.0	2	166.0
+Total	221.5
+---Ali Can---
+Sweater	58.5	2	117.0
+Jeans	68.5	1	68.5
+Total	185.5
+---Mehmet Karadeniz---
+Jeans	103.0	2	206.0
+Sweater	61.6	3	184.8
+Total	390.8

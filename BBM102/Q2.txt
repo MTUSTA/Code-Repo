@@ -1,0 +1,99 @@
+
+public class Main {
+
+	public class CellPhoneFactory {
+		public CellPhone produceCellPhone(String name, String type, Battery nimhBattery, Screen screen) {
+			CellPhone var1 = null;
+
+			if(name.compareTo("Nokia")==0  && screen.getClass() == AMOLEDScreen.class) {
+				System.out.println("Nokia phone cannot have AMOLEDScreen");
+				return null;
+			}
+			else if(name.compareTo("Apple")==0  && screen.getClass() == LCDScreen.class) {
+				System.out.println("Apple phone cannot have LCDScreen");
+				return null;
+			}			
+			else if(name.compareTo("Samsung")==0  && nimhBattery.getClass() == NİHMBattery.class) {
+				System.out.println("Samsung phone cannot have NİMHBattery");
+				return null;
+			}
+			var1= new CellPhone(name,type,nimhBattery,screen);
+			System.out.println("Factory has produced one "+name+"-"+type);
+			return var1;
+		
+		}
+
+	}
+
+	public class CellPhone {
+		String name;
+		String type;
+		Battery battery;
+		Screen screen;
+		public CellPhone(String name ,String type,Battery battery,Screen screen) {
+			this.name=name;
+			this.type=type;
+			this.battery = battery;
+			this.screen = screen;
+		}
+		public String getInfo() {
+			
+			return "Info: "+this.name+" "+this.type+"[The Battery does not support fast recharge having max "+battery.amper+" mAH - The screen has max resolution of "+screen.pixel+"px at "+screen.res+"PPI";	
+		}
+		
+	}
+
+	public class Screen {
+		public int pixel;
+		public String res;
+	}
+
+	public class LCDScreen extends Screen{
+		public LCDScreen(int a ,String b) {
+			this.pixel=a;
+			this.res=b;
+		}
+	}
+
+	public class AMOLEDScreen extends Screen{
+		public AMOLEDScreen(int a ,String b) {
+			this.pixel=a;
+			this.res=b;
+		}
+	}
+
+	public class Battery {
+		public int amper;
+		public boolean bool;
+	}
+	public class LİONBattery extends Battery{
+		public LİONBattery(int a ,boolean b) {
+			this.amper=a;
+			this.bool=b;
+		}
+	}
+	public class NİHMBattery extends Battery{
+		
+		public NİHMBattery(int a ,boolean b) {
+			this.amper=a;
+			this.bool=b;
+		}
+
+	}
+
+
+	public static void main(String[] args) {
+		Battery nimhBattery = new NİHMBattery(3000, false);
+		Battery lionBattery = new LİONBattery(5000, true);
+		Screen lcdScreen = new LCDScreen(400, "1920x1080");
+		Screen amoledScreen = new AMOLEDScreen(540, "3200x1440");
+		CellPhoneFactory cpf = new CellPhoneFactory();
+		CellPhone cphone1 = cpf.produceCellPhone("Nokia", "X", nimhBattery, lcdScreen);
+		System.out.println(cphone1.getInfo());
+		CellPhone cphone2 = cpf.produceCellPhone("Samsung", "S7", nimhBattery, lcdScreen);
+		CellPhone cphone3 = cpf.produceCellPhone("Apple", "5S", nimhBattery, lcdScreen);
+		CellPhone cphone4 = cpf.produceCellPhone("Samsung", "S20ULTRA", lionBattery, amoledScreen);
+		
+		
+	}
+}

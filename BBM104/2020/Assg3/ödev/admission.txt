@@ -1,0 +1,12 @@
+1	9
+Outpatient	imaging measurements tests
+Inpatient	imaging doctorvisit tests
+2	35
+Inpatient	imaging
+Inpatient	tests doctorvisit
+Outpatient	doctorvisit
+3	45
+Outpatient	doctorvisit
+Outpatient	doctorvisit
+4	46
+Inpatient	tests

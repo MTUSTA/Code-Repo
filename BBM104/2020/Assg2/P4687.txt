@@ -1,0 +1,6 @@
+Name : AHMET
+Surname : UZUN
+Registration Number : P4687
+Position : PARTTIME_EMPLOYEE
+Year of Start : 2011
+Total Salary : 684.00 TL

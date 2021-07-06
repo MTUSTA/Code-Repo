@@ -1,0 +1,3 @@
+Hasan Uzun	gold	26.01.2020	Sweater	1	Jeans	2
+Ali Can	silver	20.02.2020	Sweater	2	Jeans	1
+Mehmet Karadeniz	bronze	19.01.2020	Jeans	2	Sweater	3

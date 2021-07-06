@@ -1,0 +1,175 @@
+function int main(void) {
+    // this isa li          ne      commen      t
+    /*  this is sparta*/
+    /*  this is
+        a block
+        comment
+        nonexistant_function(something)
+    */
+    int i = 2;
+    i =+ 3;
+    i =- 2;
+    i =* 5;
+    i =/ 6;
+    i =^ 7;
+    i =% 2;
+    
+    i = 3 + 5;
+    i = 4 - 6;
+    i = 5 * 2;
+    i = 7 / 8;
+    i = 3 ^ 6;
+    i = 10 % 2;
+    
+    i++;
+    i--;
+    
+    if(i < 5) {
+        print("i is less than 5");
+    }
+
+    if(i > 5) {
+        print("i is greater than 5");
+    }
+    
+    if(i <= 5) {
+        print("i is less than or equal to 5");
+    }
+    
+    if(i >= 5) {
+        print("i is greater than or equal to 5");
+    }
+    
+    if(i == 5) {
+        print("i is 5");
+    }
+    
+    if(i != 5) {
+        print("i is not 5");
+    }
+    
+    array int arr1[6] = {1, 2, 3, 4, 5, 6};
+    
+    for(int j = 0; j < 6; j++) {
+        print("%d\n", j);
+    }
+    
+    i = 0;
+    
+    while(i < 6) {
+        if(i < 4) {
+            break;
+        }
+        
+        if(i == 3) {
+            continue;
+        }
+        
+        print("%d\n", i);
+        i++;
+    }
+    
+    i = 0;
+    
+    do {
+        print("%d\n", i);
+        i++;
+    } while(i < 6);
+    
+    i = 0;
+    
+    while(i < 6) {
+        switch(arr1[i]) {
+            case 1:
+                print("%d. element is 1", i);
+                break;
+            case 2:
+                print("%d. element is 1", i);
+                break;            
+            case 3:
+                print("%d. element is 1", i);
+                break;
+            case 4:
+                print("%d. element is 1", i);
+                break;
+            case 5:
+                print("%d. element is 1", i);
+                break;
+            case 6:
+                print("%d. element is 1", i);
+                break;
+            default:
+                print("I don't know the element");
+        }
+        
+        i++;
+    }
+    
+    i = 4;
+    int j = 6;
+    
+    if(i == 4 && j == 6) {
+        print("i is 4 and j is 6");
+    }
+    
+    if(i == 4 || j == 6) {
+        print("i is 4 or j is 6");
+    }
+    
+    char c = 'c';
+    
+    float a = 5.44;
+    float b = -23.56;
+
+    bool d = true;
+    bool e = !d;
+
+    if(!e){
+        print("bool expressions work!");    
+    }
+
+int j = 8 * 12 + 7 * 7 ** 3;
+
+	/* array definition */
+	int A[7] = {12, 21, 13, 24, 5, 6, 15};
+	string B[3] = { "tom" , "bob" , "alice"};
+	string array[4];
+	/*here syntax error dont open that
+	array.append("scholl");
+	array.append("home");
+	array.append("market");
+	array.append("library");*/
+	
+	/* dictionary definition */
+	exmp = { "tom":3, "bob":3 , "alice":5 };
+	dict = {};
+	/*syntax error dont do that
+	dict.add("scholl",5);
+	dict.add("home",8);
+	dict.add("market",3);
+	dict.add("library",6);*/
+	
+	showonmap(3,4);
+	showonmap(3.4,4);
+	showonmap(3,4.4);
+	showonmap(3.4,4.4);
+	searchlocation("DuisburgStreet");  
+	getlocation("Alice");
+	showtarget("CentralPark");
+	getroadspeed(12.0);
+	getroadspeed(12);
+	calculatethedistance(3,4,5,6);
+	getthetime(12,4);
+	getthetime(12.0,4);
+	getthetime(12,4.0);
+	getthetime(12.0,4.0);
+	twolocationdistance("Centralpark","Hospital");
+	findthepopularlocation("Cinema",1345);
+	commandaboutlocation("Crowded");
+	collaborationwithotherusers("Message",3);
+    for(int j = 0; j < 6; j++) {
+        sharescores();
+    }
+	setting();
+    return 0;
+}

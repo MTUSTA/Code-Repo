@@ -1,0 +1,18 @@
+AddPatient 33 Hakan Kanat 234-5677896 Ayranci 10. sok. 30/10
+AddPatient 88 Beril Maral 568-8964142 Bilkent 32 cd. 72/3
+AddPatient 51 Berrak Can 508-7454142 Emek 38 cd. 42/5
+RemovePatient 46
+RemovePatient 12
+CreateAdmission 7 50
+AddExamination 7 Inpatient tests doctorvisit
+AddExamination 7 Outpatient tests measurements
+TotalCost 7
+CreateAdmission 8 42
+AddExamination 8 Inpatient doctorvisit
+TotalCost 8
+RemovePatient 53
+CreateAdmission 10 33
+AddExamination 10 Outpatient
+TotalCost 10
+RemovePatient 35
+ListPatients

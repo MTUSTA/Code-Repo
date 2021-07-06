@@ -1,0 +1,20 @@
+---Serap Kanat---
+Sweater	61.6	1	61.6
+Jeans	103.0	1	103.0
+Hat	45.0	1	45.0
+Total	209.6
+---Aysun Yilmaz---
+Sweater	55.5	2	111.0
+Jeans	83.0	2	166.0
+Total	277.0
+---Suna Uysal---
+Jeans	68.5	2	137.0
+Hat	36.5	2	73.0
+Total	210.0
+---Serap Kanat---
+Hat	45.0	3	135.0
+Total	135.0
+---Hasan Uzun---
+Sweater	55.5	1	55.5
+Jeans	83.0	2	166.0
+Total	221.5

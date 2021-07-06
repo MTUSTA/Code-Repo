@@ -1,0 +1,6 @@
+Name : ERDEM
+Surname : YILMAZ
+Registration Number : F5632
+Position : FACULTY_MEMBER
+Year of Start : 2003
+Total Salary : 6942.00 TL

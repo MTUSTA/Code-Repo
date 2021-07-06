@@ -1,0 +1,5 @@
+Serap Kanat	bronze	25.03.2020	Sweater	1	Jeans	1	Hat	1
+Aysun Yilmaz	gold	20.01.2020	Sweater	2	Jeans	2
+Suna Uysal	silver	26.02.2020	Jeans	2	Hat	2
+Serap Kanat	bronze	15.01.2020	Hat	3
+Hasan Uzun	gold	26.01.2020	Sweater	1	Jeans	2

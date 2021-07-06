@@ -1,0 +1,35 @@
+Patient 33 Hakan added
+Patient 88 Beril added
+Patient 51 Berrak added
+Patient 46 Can removed
+Patient 12 Orhan removed
+Admission 7 created
+Inpatient examination added to admission 7
+Outpatient examination added to admission 7
+TotalCost for admission 7
+	Inpatient tests doctorvisit 32$
+	Outpatient tests measurements 27$
+	Total: 59$
+Admission 8 created
+Inpatient examination added to admission 8
+TotalCost for admission 8
+	Inpatient doctorvisit 25$
+	Total: 25$
+Patient 53 Ahmet removed
+Admission 10 created
+Outpatient examination added to admission 10
+TotalCost for admission 10
+	Outpatient 15$
+	Total: 15$
+Patient 35 Umit removed
+Patient List:
+45 Arif Batar 563-95632569 Address:  Balgat 1321 cd. 12/5
+88 Beril Maral 568-8964142 Address:  Bilkent  32  cd.  72/3 
+51 Berrak Can 508-7454142 Emek 38 cd. 42/5
+9 Ebru Yilmaz 312-4567890 Address:  Maltepe 21 sk. 23/7
+7 Elif Yaren 543-1232344 Address: Eryaman 1. Etap 26 sk. 14/2
+33 Hakan Kanat 234-5677896 Address:  Ayranci  10.  sok.  30/10 
+5 Harun Gezici 536-8967812 Address: Tandogan 34 sk. 56/3
+42 Ismail Can 535-8969746 Address:  Cebeci 56 cd. 34/5
+50 Meryem Atas 654-2122121 Address:  Emek 19 sk. 12/5
+23 Zeynep Atac 234-3456789 Address:  Hacettepe University Department of Matemathics

@@ -1,0 +1,6 @@
+Name : AHMET
+Surname : UZUN
+Registration Number : W8567
+Position : WORKER
+Year of Start : 2005
+Total Salary : 2626.00 TL
