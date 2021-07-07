@@ -1,0 +1,27 @@
+addUser	1	Jamie Lannister
+addUser	2	Arya Stark
+addUser	3	Gendry Baratheon
+addMovie	1	Diner	1982
+addMovie	2	Dead-Bang	1989
+addMovie	5	At Close Range	1986
+addMovie	3	Love Kills	1991
+addMovie	4	Make Mine Mink	1960
+addMovie	44	Bowery at Midnight	1942
+addMovie	44	Warning Sign	1985
+addMovie	44	The Deep	1997
+showAllMovie
+checkoutMovie	1	1
+checkoutMovie	5	1
+checkoutMovie	4	3
+showAllMovie
+showMovie	4
+showMovie	222
+showMovie	2
+showUser	1
+deleteMovie	44
+deleteMovie	4
+showAllMovie
+returnMovie	1
+returnMovie	100
+returnMovie	2
+showAllMovie

@@ -1,0 +1,16 @@
+P1 Ankara
+P2 Adana
+P3 Konya
+P4 Urfa
+P5 Ankara
+P6 Ankara
+P7 Konya
+P8 Ankara
+P9 Konya
+P10 Urfa
+P11 Mardin
+P12 Adana
+P13 Adana
+P14 Mardin
+P15 Mardin
+P16 Konya

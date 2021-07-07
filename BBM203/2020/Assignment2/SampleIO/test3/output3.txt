@@ -1,0 +1,56 @@
+===Movie Library System===
+
+===addMovie() method test===
+Movie 12 has been added
+Movie 9 has been added
+Movie 9 already exists
+
+===deleteMovie() method test===
+Movie 4 does not exist
+Movie 12 has not been checked out
+Movie 12 has been deleted
+Movie 12 does not exist
+Movie 9 has not been checked out
+Movie 9 has been deleted
+Movie 4 does not exist
+
+===addUser() method test===
+User 12 has been added
+User 12 already exists
+User 2 has been added
+User 33 has been added
+User 2 already exists
+User 99 has been added
+
+===deleteUser() method test===
+User 12 has been deleted
+User 666 does not exist
+User 99 has been deleted
+User 12 does not exist
+User 33 has been deleted
+User 2 has been deleted
+User 444 does not exist
+
+===addMovie() method test===
+Movie 12 has been added
+Movie 9 has been added
+Movie 667 has been added
+Movie 647 has been added
+
+===addUser() method test===
+User 233 has been added
+User 1 has been added
+
+===checkoutMovie() method test===
+Movie 9 has been checked out by User 233
+Movie 1000 does not exist for checkout
+User 11 does not exist for checkout
+Movie 12 has been checked out by User 1
+Movie 9 does not exist for checkout
+
+===showAllMovie() method test===
+Movie id - Movie name - Year - Status
+647 Tom Sawyer 1930 Not checked out
+667 Midway 2019 Not checked out
+12 Fear 1990 Checked out by User 1
+9 Bird Box 2018 Checked out by User 233

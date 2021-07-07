@@ -1,0 +1,43 @@
+addUser	1	Janet Devis
+addUser	2	Ilona Jones
+addUser	3	John Barajas
+addUser	4	Bobbie Craig
+addUser	5	Anne Vivanco
+addUser	6	William Nguyen
+addUser	7	Emma Ashley
+addUser	8	Adam Murry
+addUser	9	Robert Ross
+addUser	10	Carol Howell
+addMovie	1	Chocolate	2019
+addMovie	8	The Zoya Factor	2019
+addMovie	5	Robotech	1985
+addMovie	13	Cleopatra	1912
+addMovie	4	Hamlet	1921
+addMovie	44	Shinel	1926
+addMovie	7	Tom Sawyer	1930
+addMovie	9	The Rag Man	1925
+addMovie	11	All Together Now	2020
+addMovie	15	Tesla	2020
+addMovie	22	The Rag Man	1925
+addMovie	44	World War Z	2013
+showAllMovie
+checkoutMovie	1	6
+checkoutMovie	5	1
+checkoutMovie	4	9
+checkoutMovie	22	10
+checkoutMovie	44	5
+showAllMovie
+showMovie	15
+showMovie	33
+showMovie	3
+showMovie	8
+showUser	7
+deleteMovie	15
+deleteMovie	7
+deleteMovie	13
+showAllMovie
+returnMovie	11
+returnMovie	30
+returnMovie	15
+returnMovie	13
+showAllMovie

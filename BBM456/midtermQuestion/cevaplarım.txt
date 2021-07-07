@@ -1,0 +1,150 @@
+1)
+https://www.usna.edu/Users/cs/wcbrown/courses/si110AY13S/lec/l26/lec.html
+
+the protocol doesn't provide authentication.
+A's received a message only A could read, and the message claims to have been sent by B, but he has no guarantees that it really did come from B.
+B's received a message only B could read, and the message claims to have been sent by A, but he has no guarantees that it really did come from A.
+Encryption does not provide authenticity/integrity. Anyone can send such a ciphertext.
+
+gerçek cevap:
+the protocol doesn't provide authentication.
+B's received a message only B could read, and the message claims to have been sent by A, but he has no guarantees that it really did come from A.
+Encryption does not provide authenticity/integrity. Anyone can send such a ciphertext.
+
+
+
+
+2)
+Alice doing something like stupid
+oscar know private key -> d
+everybody know public key -> e
+e d = 1 mod phi(n)
+p ve q büyük asal sayılar olabilir. phi = p-1 * q-1 çarpımı büyük sayı olabilir. Sonuç sınırlı bir sayı olacağından dolayı phi değerini elde edebilir.
+burdan phi yi elde ediyor. tüm olasılıkları dener ve yeni keyi elde eder. Tekrardan N değerini üretmesi alice'i daha güvenli tutacaktır.
+
+
+Alice doing something like wisely
+oscar know private key -> d
+everybody know public key -> e
+e d = 1 mod phi(n)
+p ve q büyük asal sayılardır. phi = p-1 * q-1 çarpımı büyük sayılardır. 
+phi değerlerini elde edebilir. 
+elde edilen phi değerleri üzerinden çok fazla e ve d sayısı oluşacağından dolayı phi değeri ve d nin tekrardan bulunması çok zorlaşacaktır.
+Alice her şeyi en baştan yapmayarak akıllı iş yapmıştır
+
+
+gerçek cevap:
+
+I think Alice doing something like wisely.
+Generating a key from scratch is a very costly event
+
+oscar know private key -> d
+everybody know public key -> e
+e d = 1 mod phi(n)
+p and q are large prime numbers. The product of phi = (p-1) * (q-1) are large numbers.
+It is difficult to obtain the phi value
+Since too many e and d numbers will occur on the obtained phi values, it will be very difficult to find the phi value and d again.
+Alice did something like wisely by not doing everything from scratch
+
+
+
+
+
+3)
+A)
+Scarlet ablamız Random bir sayı seçerek bunu ortak secret key ile XOR luyor sonrasında bunu Penelope ablamıza gönderiyor Penelope ise tekrardan ortak secret key XOR’layarak Random sayının kendisini Scarlete aynen geri gönderiyor. 
+Scarlette R=R’ durumunu bulduğunda karşında Ortak keye sahip Penelope olduğunu anlıyor. Böylelikle Authentication sağlanmış oluyor.
+
+
+cevap:
+
+xor of the same value (number) 2 times causes self-neutralization
+A + B + A --> B 
+Scarlett encrypts r with xor using key k to get M -> M = K + R
+Penelope gets the encrypted message by encrypting xor using K key and obtaining R 
+K + R + K -> R Here, the xor operation performed over the letter K 2 times enabled the encrypted message to be decrypted.
+When Penelope sends the R value it finds to Scarlett, authentication will be achieved.
+
+
+B)
+If Javier listening to this messages and same message get XOR'ed with same "K" he can find out the secret key "K".
+
+cevap:
+Javier will have learned the M and R values while listening to the traffic
+Can obtain the K value from the M and R values
+K = M + R
+
+
+4)
+A)
+totient(phi) = (p-1) * (q-1)
+totient(phi) = 12 * 6 = 72
+2 side seçilmemelidir. 
+gcd = greatest common divisor
+
+
+cevap:
+
+totient(phi) = (p-1) * (q-1)
+totient(phi) = 12 * 6 = 72
+Numbers in 2 options should not be selected.
+gcd = greatest common divisor
+gcd (10, phi) is not equal to 1
+gcd(26,phi) is not equal to 1
+
+
+
+B)
+totient(phi) = 12 * 6 = 72
+1 < e < phi(72)
+e -> encryption is a 17
+d e ≡ 1 (mod phi(n)) 
+d e ≡ 1 (mod 72) 
+d = (1 + K(72))/17 -> the value of k is increased starting from 0 until the remainder reaches 0.
+
+d = (1 + K(72))/17 -> k = 4 olduğunda kalan 0 olduğu için, d = 17 oluyor. d=17 olduğunda e ve d birbirlerine eşit olacağından dolayı, k değeri daha büyük olmalıdır.
+
+
+cevap:
+
+totient(phi) = 12 * 6 = 72
+1 < e < phi(72)
+e -> encryption is a 17
+d e ≡ 1 (mod phi(n)) 
+d e ≡ 1 (mod 72) 
+d = (1 + K(72))/17 -> the value of k is increased starting from 0 until the remainder reaches 0.
+When d = (1 + K (72)) / 17 -> k = 4 the remainder is 0, so d = 17.
+Since e and d are equal when d = 17, the value of k must be greater than 4.
+
+
+5)
+A)
+Bob ve alice aynı hash algorithmasını kullandıklarından dolayı sorun oluşturmaz.
+
+cevap:
+Since bob and alice use the same hash algorithm, changing steps is not a problem.
+Both of them have the value of K and they can get Hash with the same algorithm.
+
+
+B) hashed value is not reversible.
+Alice ile Bob arasına girerse h(K) değerini elde edebilir.
+Alice'den gelen h(h(k)) kaydeder ve Alice'i engeller. 
+Oscar Kaydettiği h(h(k)) değerini Bob'a yolladığı zaman Bob gelen değeri onaylayacak ve h(K) değerini Alice yerine Oscar'a gönderecektir.
+
+cevap:
+hashed value is not reversible.
+Cannot derive h (k) from h (h (k))
+
+6)
+A) Key Distribution and digital signatures.
+
+B) c = m power e (mod n)
+   m = c power d (mod n)
+  
+   c = m^e (mod n)
+   m = c^d (mod n)
+   
+C) RSA should be focused factoring large numbers
+
+D) c = 14
+   d = 3

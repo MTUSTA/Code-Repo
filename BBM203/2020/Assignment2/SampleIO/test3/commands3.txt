@@ -1,0 +1,33 @@
+addMovie	12	Adult World	2013
+addMovie	9	Bolt	2008
+addMovie	9	Shrek	2001
+deleteMovie	4
+deleteMovie	12
+deleteMovie	12
+deleteMovie	9
+deleteMovie	4
+addUser	12	Jon Snow
+addUser	12	Jon Snow
+addUser	2	Arya Stark
+addUser	33	Sansa Stark
+addUser	2	Arya Stark
+addUser	99	Theon Greyjoy
+deleteUser	12
+deleteUser	666
+deleteUser	99
+deleteUser	12
+deleteUser	33
+deleteUser	2
+deleteUser	444
+addMovie	12	Fear	1990
+addMovie	9	Bird Box	2018
+addMovie	667	Midway	2019
+addMovie	647	Tom Sawyer	1930
+addUser	233	Robb Stark
+addUser	1	Rhegal Targaryen
+checkoutMovie	9	233
+checkoutMovie	1000	233
+checkoutMovie	12	11
+checkoutMovie	12	1
+checkoutMovie	9	233
+showAllMovie

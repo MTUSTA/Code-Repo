@@ -1,0 +1,5 @@
+T1 Istanbul 7.1
+T2 Ankara 1.1
+T3 Bursa 4.6
+T4 Bursa 3.5
+T5 Denizli 5.6

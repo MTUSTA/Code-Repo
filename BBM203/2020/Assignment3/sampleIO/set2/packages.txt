@@ -1,0 +1,10 @@
+P1 Istanbul
+P2 Istanbul
+P3 Ankara
+P4 Istanbul
+P5 Ankara
+P6 Diyarbakir
+P7 Diyarbakir
+P8 Ankara
+P9 Istanbul
+P10 Ankara

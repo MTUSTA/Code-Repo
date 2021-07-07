@@ -1,0 +1,21 @@
+calculateMax(5): Prepare
+calculateMax(4): Prepare
+calculateMax(2): Prepare
+calculateMax(1): Prepare
+calculateMax(0): Zero
+calculateMax(0): Zero
+calculateMax(3): Prepare
+calculateMax(2): Present
+calculateMax(2): Present
+calculateMax(4): Present
+findSolutionDynamic(5)
+Adding Assignment{name='Organize a movie night', start='17:00', duration=1, importance=6, maellard=false, finish='18:00', weight=6.0} to the dynamic schedule
+findSolutionDynamic(4)
+findSolutionDynamic(3)
+Adding Assignment{name='Wash Benson's car', start='16:00', duration=1, importance=12, maellard=false, finish='17:00', weight=12.0} to the dynamic schedule
+findSolutionDynamic(2)
+Adding Assignment{name='Clean the fountain', start='10:00', duration=5, importance=61, maellard=true, finish='15:00', weight=12212.2} to the dynamic schedule
+Adding Assignment{name='Rake the leaves', start='09:00', duration=3, importance=30, maellard=false, finish='12:00', weight=10.0} to the greedy schedule
+Adding Assignment{name='Refill vending machines', start='12:00', duration=1, importance=45, maellard=false, finish='13:00', weight=45.0} to the greedy schedule
+Adding Assignment{name='Wash Benson's car', start='16:00', duration=1, importance=12, maellard=false, finish='17:00', weight=12.0} to the greedy schedule
+Adding Assignment{name='Organize a movie night', start='17:00', duration=1, importance=6, maellard=false, finish='18:00', weight=6.0} to the greedy schedule

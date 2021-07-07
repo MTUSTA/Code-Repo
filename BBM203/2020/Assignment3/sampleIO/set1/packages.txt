@@ -1,0 +1,13 @@
+P1 Istanbul
+P2 Ankara
+P3 Bursa
+P4 Istanbul
+P5 Ankara
+P6 Bursa
+P7 Bursa
+P8 Ankara
+P9 Ankara
+P10 Antalya
+P11 Denizli
+P12 Denizli
+P13 Denizli

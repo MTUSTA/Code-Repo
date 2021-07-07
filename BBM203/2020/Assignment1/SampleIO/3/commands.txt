@@ -1,0 +1,67 @@
+move pile 0 0 1
+move to foundation pile 0
+open 1
+move pile 6 0 0
+move pile 6 0 0
+move pile 5 0 6
+open 6
+move pile 2 0 6
+open 6
+open 2
+move pile 3 0 2
+open 3
+move pile 2 1 3
+open 2
+move pile 2 0 0
+move pile 1 0 2
+open from stock
+move to foundation waste
+move waste 2
+move waste 1
+move pile 4 0 3
+open 4
+move pile 4 0 1
+open 4
+move pile 5 0 6
+open 5
+open from stock
+open from stock
+open from stock
+open from stock
+move waste 0
+move waste 3
+move waste 0
+open from stock
+move waste 4
+open from stock
+move waste 6
+move pile 3 4 6
+open 3
+move pile 4 1 6
+open 4
+move pile 4 0 1
+open 4
+move waste 1
+move pile 5 0 1
+open 5
+move waste 2
+move pile 6 5 2
+move pile 6 10 2
+open 6
+open from stock
+open from stock
+open from stock
+open from stock
+open from stock
+open from stock
+move waste 5
+move to foundation waste
+open from stock
+open from stock
+open from stock
+open from stock
+open from stock
+open from stock
+open from stock
+open from stock
+exit

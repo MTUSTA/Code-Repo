@@ -1,0 +1,104 @@
+
+Q1)
+
+
+saldırgan kendini A gibi gösterip, B yerine kendini koyduğu zaman 
+Z ---> A,Z,E[Ka,R] ---->Server
+
+server R yi saldırganın anahtarı ile şifreleyecektir. 
+Server şifrelenmiş veriyi saldırgana gönderdiğinde, saldırgan artık kendi anahtarı ile veriyi çözecek.
+Bundan sonra saldırgan R yi elde etmiş olacaktır.
+Z <--- E[Kz,R] <--- Server  
+
+R'yi elde ettikten sonra mesajı R kullanarak öğrenmiş olacaktır
+
+
+when the attacker pretends to be A to the server and substitutes himself for B
+Z ---> A,Z,E[Ka,R] ---->Server
+
+The server will encrypt R with the attacker's key.
+When the server sends the encrypted data to the attacker, the attacker will now decrypt the data with his own key. After that, the attacker will have obtained R.
+
+Z <--- E[Kz,R] <--- Server
+
+After obtaining R, the attacker will learn the message using R
+
+Q2)
+
+n = p x q
+phi(n) = p-1 x q-1
+To find phi(n), it is necessary to prime factorization
+35 = 7x5 -> p = 7 ve q = 5
+phi(n) = (7-1) x (5-1) = 6 x 4 = 24
+d e = 1 (mod phi(n))
+d 5 = 1 (mod 24)
+d = 5
+decryption -> m = c^d (modn)
+M = 10^5 mod 35
+M = 5
+
+
+Q3)
+
+A)
+If the attacker who listens to the network knows the hash function, it is possible to break the system.
+
+When the Server generates the R value and sends it to the User, the Attacker gets the R value.
+
+Since the attacker knows the Hash function, the attacker obtains the Hash(R).
+
+As the User sends the X value to the Server, the Attacker obtains the X value.
+
+X XOR hash(R) = hash(P) XOR hash(R) XOR hash(R) -> hash(P) is obtained
+
+Now the attacker has hash(P) and hash(R).
+
+Attacker can now log in as User
+
+B)
+If the hash(P) XOR hash(R) structure is changed to hash(P XOR R), security is ensured.
+because the attacker will only obtain the R value but will never know the P value.
+
+
+Q4)
+
+Normally 2^(2*n) 
+but meet in the middle attack makes the system even easier to crack
+meet in the middle attack encryption -> 2^n
+meet in the middle attack decryption -> 2^n. 
+encryption(2^n) + decryption(2^n) = 2^(n+1)
+Answer is 2^(n+1)
+
+Q5)
+
+A)
+
+No -> No Signature
+The attacker can log in to the system by sending the username and password of other people to the server.
+User authentication and user must match.
+Different methods are required to prevent this situation.
+Example digital signature -> if the person who wants to log in has not shared his private key with anyone or has the private key stolen, it will be sufficient to send the digital signature to log in.
+Verifying the digital signature with the public key will confirm that the person who wants to log in is the original owner of the account.
+
+B)
+phi(n) = (p-1)*(q-1)
+phi(n) =  24
+(p-1)*(q-1) = 24 ->{p=13, q=3},{p=3, q=13}, {p=7, q=5},{p=5, q=7} oluyor
+
+C)
+
+The key must be at least as long as the plaintext.
+plain text file size = 1905 bytes 
+1 character = 1 byte so key size must be at least 1905 bytes(characters)
+
+
+D) 50! = 50 factoriel
+
+E)
+
+Everything is never safe. but in comparison of these two encryption methods, Public-key cryptography is more secure.
+
+What makes the process secure is that the private key is kept secret by its owner, and no one is ever required to reveal or share a private key.
+
+Q6)
+3rd party trusted database

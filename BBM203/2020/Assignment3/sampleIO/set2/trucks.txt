@@ -1,0 +1,4 @@
+T1 Ankara 4.8
+T2 Istanbul 7.2
+T3 Istanbul 2.8
+T4 Ankara 4.2

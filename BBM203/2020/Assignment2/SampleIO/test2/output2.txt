@@ -1,0 +1,108 @@
+===Movie Library System===
+
+===addUser() method test===
+User 1 has been added
+User 2 has been added
+User 3 has been added
+User 4 has been added
+User 5 has been added
+User 6 has been added
+User 7 has been added
+User 8 has been added
+User 9 has been added
+User 10 has been added
+
+===addMovie() method test===
+Movie 1 has been added
+Movie 8 has been added
+Movie 5 has been added
+Movie 13 has been added
+Movie 4 has been added
+Movie 44 has been added
+Movie 7 has been added
+Movie 9 has been added
+Movie 11 has been added
+Movie 15 has been added
+Movie 22 has been added
+Movie 44 already exists
+
+===showAllMovie() method test===
+Movie id - Movie name - Year - Status
+22 The Rag Man 1925 Not checked out
+15 Tesla 2020 Not checked out
+11 All Together Now 2020 Not checked out
+9 The Rag Man 1925 Not checked out
+7 Tom Sawyer 1930 Not checked out
+44 Shinel 1926 Not checked out
+4 Hamlet 1921 Not checked out
+13 Cleopatra 1912 Not checked out
+5 Robotech 1985 Not checked out
+8 The Zoya Factor 2019 Not checked out
+1 Chocolate 2019 Not checked out
+
+===checkoutMovie() method test===
+Movie 1 has been checked out by User 6
+Movie 5 has been checked out by User 1
+Movie 4 has been checked out by User 9
+Movie 22 has been checked out by User 10
+Movie 44 has been checked out by User 5
+
+===showAllMovie() method test===
+Movie id - Movie name - Year - Status
+15 Tesla 2020 Not checked out
+11 All Together Now 2020 Not checked out
+9 The Rag Man 1925 Not checked out
+7 Tom Sawyer 1930 Not checked out
+13 Cleopatra 1912 Not checked out
+8 The Zoya Factor 2019 Not checked out
+22 The Rag Man 1925 Checked out by User 10
+4 Hamlet 1921 Checked out by User 9
+1 Chocolate 2019 Checked out by User 6
+44 Shinel 1926 Checked out by User 5
+5 Robotech 1985 Checked out by User 1
+
+===showMovie() method test===
+15 Tesla 2020 Not checked out
+Movie with the id 33 does not exist
+Movie with the id 3 does not exist
+8 The Zoya Factor 2019 Not checked out
+
+===showUser() method test===
+User id: 7 User name: Emma Ashley
+User 7 checked out the following Movies:
+
+===deleteMovie() method test===
+Movie 15 has not been checked out
+Movie 15 has been deleted
+Movie 7 has not been checked out
+Movie 7 has been deleted
+Movie 13 has not been checked out
+Movie 13 has been deleted
+
+===showAllMovie() method test===
+Movie id - Movie name - Year - Status
+11 All Together Now 2020 Not checked out
+9 The Rag Man 1925 Not checked out
+8 The Zoya Factor 2019 Not checked out
+22 The Rag Man 1925 Checked out by User 10
+4 Hamlet 1921 Checked out by User 9
+1 Chocolate 2019 Checked out by User 6
+44 Shinel 1926 Checked out by User 5
+5 Robotech 1985 Checked out by User 1
+
+===returnMovie() method test===
+Movie 11 has not been checked out
+Movie 30 not exist in the library
+Movie 15 not exist in the library
+Movie 13 not exist in the library
+
+===showAllMovie() method test===
+Movie id - Movie name - Year - Status
+11 All Together Now 2020 Not checked out
+9 The Rag Man 1925 Not checked out
+8 The Zoya Factor 2019 Not checked out
+22 The Rag Man 1925 Checked out by User 10
+4 Hamlet 1921 Checked out by User 9
+1 Chocolate 2019 Checked out by User 6
+44 Shinel 1926 Checked out by User 5
+5 Robotech 1985 Checked out by User 1

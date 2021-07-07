@@ -1,0 +1,7 @@
+T1 Ankara 3.4
+T2 Ankara 2.8
+T3 Adana 7.1
+T4 Urfa 6.3
+T5 Konya 3.2
+T6 Mardin 4.1
+T7 Mardin 3.7

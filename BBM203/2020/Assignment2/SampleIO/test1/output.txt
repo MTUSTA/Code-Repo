@@ -1,0 +1,76 @@
+===Movie Library System===
+
+===addUser() method test===
+User 1 has been added
+User 2 has been added
+User 3 has been added
+
+===addMovie() method test===
+Movie 1 has been added
+Movie 2 has been added
+Movie 5 has been added
+Movie 3 has been added
+Movie 4 has been added
+Movie 44 has been added
+Movie 44 already exists
+Movie 44 already exists
+
+===showAllMovie() method test===
+Movie id - Movie name - Year - Status
+44 Bowery at Midnight 1942 Not checked out
+4 Make Mine Mink 1960 Not checked out
+3 Love Kills 1991 Not checked out
+5 At Close Range 1986 Not checked out
+2 Dead-Bang 1989 Not checked out
+1 Diner 1982 Not checked out
+
+===checkoutMovie() method test===
+Movie 1 has been checked out by User 1
+Movie 5 has been checked out by User 1
+Movie 4 has been checked out by User 3
+
+===showAllMovie() method test===
+Movie id - Movie name - Year - Status
+44 Bowery at Midnight 1942 Not checked out
+3 Love Kills 1991 Not checked out
+2 Dead-Bang 1989 Not checked out
+4 Make Mine Mink 1960 Checked out by User 3
+5 At Close Range 1986 Checked out by User 1
+1 Diner 1982 Checked out by User 1
+
+===showMovie() method test===
+4 Make Mine Mink 1960 Checked out by User 3
+Movie with the id 222 does not exist
+2 Dead-Bang 1989 Not checked out
+
+===showUser() method test===
+User id: 1 User name: Jamie Lannister
+User 1 checked out the following Movies:
+Movie id - Movie name - Year
+5 At Close Range 1986
+1 Diner 1982
+
+===deleteMovie() method test===
+Movie 44 has not been checked out
+Movie 44 has been deleted
+Movie 4 has been checked out
+Movie 4 has been deleted
+
+===showAllMovie() method test===
+Movie id - Movie name - Year - Status
+3 Love Kills 1991 Not checked out
+2 Dead-Bang 1989 Not checked out
+5 At Close Range 1986 Checked out by User 1
+1 Diner 1982 Checked out by User 1
+
+===returnMovie() method test===
+Movie 1 has been returned
+Movie 100 not exist in the library
+Movie 2 has not been checked out
+
+===showAllMovie() method test===
+Movie id - Movie name - Year - Status
+1 Diner 1982 Not checked out
+3 Love Kills 1991 Not checked out
+2 Dead-Bang 1989 Not checked out
+5 At Close Range 1986 Checked out by User 1
