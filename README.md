@@ -1,32 +1,32 @@
 # Code-Repo
   + ABAP
   + BBM101
-    + 2016
-    + 2020
+    + 2016 Fall
+    + 2020 Fall
   + BBM102
   + BBM103
-    + 2016
-    + 2017
-    + 2018
-    + 2020
+    + 2016 Fall
+    + 2017 Fall
+    + 2018 Fall
+    + 2020 Fall
   + BBM104
-    + 2017
-    + 2018
-    + 2020
-    + 2021
+    + 2017 Spring
+    + 2018 Spring
+    + 2020 Spring
+    + 2021 Spring
   + BBM201
-    + 2019
-    + 2020
+    + 2019 Fall
+    + 2020 Fall
   + BBM202
-    + 2020
+    + 2020 Spring
   + BBM203
-    + 2017
-    + 2018
-    + 2020
+    + 2017 Fall
+    + 2018 Fall
+    + 2020 Fall
   + BBM204
-    + 2018
-    + 2020
-    + 2021
+    + 2018 Spring
+    + 2020 Spring
+    + 2021 Spring
   + BBM205
   + BBM231
   + BBM233
@@ -40,8 +40,8 @@
   + BBM405
   + BBM406
   + BBM409
-    + 2019
-    + 2021
+    + 2019 Fall
+    + 2021 Spring
   + BBM410
   + BBM443
   + BBM451
