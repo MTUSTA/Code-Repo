@@ -1,6 +1,0 @@
-Name : DOGAN
-Surname : YILMAZ
-Registration Number : C2698
-Position : CHIEF
-Year of Start : 2004
-Total Salary : 3086.00 TL

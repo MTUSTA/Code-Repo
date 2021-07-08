@@ -1,0 +1,12 @@
+I	Vancouver Canucks	Dallas Stars	3:0
+H	Nilufer Bld.	Guneysu	18:23
+H	Guneysu	IzmirBB	19:21
+I	Colorado Avalanche	Vancouver Canucks	2:1
+H	Goztepe	IzmirBB	31:17
+I	Vancouver Canucks	St. Louis Blues	3:3
+I	Dallas Stars	Colorado Avalanche	2:3
+I	St. Louis Blues	Dallas Stars	1:4
+H	IzmirBB	Nilufer Bld.	25:25
+I	Colorado Avalanche	St. Louis Blues	2:0
+H	Nilufer Bld.	Goztepe	26:30
+H	Guneysu	Goztepe	22:14

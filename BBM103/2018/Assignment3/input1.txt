@@ -1,0 +1,26 @@
+CREATEHALL bluehall 15x15
+CREATEHALL redhall 20x20
+CREATEHALL imax 25x25
+CREATEHALL redhall 17x17
+SELLTICKET ayse student bluehall B3 B4 C2-10
+SELLTICKET nermin full bluehall C9-12
+SELLTICKET ezgi student imax G4
+SELLTICKET faysal full redhall H1-12
+SELLTICKET nursen full imax G5
+SELLTICKET ahmet full redhall A3
+SELLTICKET anil student imax D3-12
+SELLTICKET hamdi student redhall D4-54 E4-7 G4-12
+SELLTICKET dilan full redhall A3-6 N3-8
+CANCELTICKET redhall H3
+CANCELTICKET imax D7
+CANCELTICKET imax U32
+SHOWHALL bluehall
+BALANCE bluehall redhall
+CANCELTICKET bluehall C3
+SHOWHALL bluehall
+BALANCE bluehall redhall
+SHOWHALL imax
+CANCELTICKET imax P3
+
+
+

@@ -1,0 +1,9 @@
+FileName	Output	
+		
+Input.txt	It is not a protein! No Stop code(30)	
+		
+Input1.txt	It is not a known protein.			
+		It is probably a new protein.  M-I-E-A-V-R-K-T-I(35)
+			
+Input2.txt	MyProteinC is identified in sequence.			
+		The amino acids of MyProteinC:  M-F-S-Y-C-L-P-Q-R			

@@ -8,7 +8,7 @@
 int recursion(int** map_matrix,int base_row,int base_colomn,int** key_matrix,int map_row,int map_column,int key_len,FILE* output){
 
     /*check coordinates ,out of matrix area*/
-    if(base_row < 0 || base_colomn<0|| base_row >= map_row || base_row >= map_column){
+    if(base_row < 0 || base_colomn<0|| base_row >= map_row || base_colomn >= map_column){
         return FALSE;
     }
 

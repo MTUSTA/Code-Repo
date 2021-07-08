@@ -1,0 +1,181 @@
+HERO STATUS
+DRIZZT HP: 8 XP: 0
+CATTIE HP: 6 XP: 0
+BRUENOR HP: 10 XP: 0
+WULFGAR HP: 12 XP: 0
+ARTEMIS HP: 8 XP: 0
+JARLAXLE HP: 8 XP: 0
+
+MONSTER STATUS
+TROLL HP: 4
+GOBLIN HP: 1
+UNDEAD HP: 1
+VERMIN HP: 3
+MINDFLAYER HP: 10
+REPTILE HP: 1
+ERRTU HP: 14
+
+MAP STATUS
+. T G . . J . . . . 
+. C R . . . . . . B 
+. . . . . . V . . A 
+. . . . . E . . . . 
+. . . . U . . . . . 
+. . . . . . . M . . 
+. D . . . . . . . . 
+. W . . . . . . . . 
+
+MONSTERS ATTACKED
+
+HERO STATUS
+DRIZZT HP: 8 XP: 0
+CATTIE HP: 0 XP: 0
+BRUENOR HP: 10 XP: 0
+WULFGAR HP: 12 XP: 0
+ARTEMIS HP: 8 XP: 0
+JARLAXLE HP: 8 XP: 0
+
+MAP STATUS
+. T G . . J . . . . 
+. . R . . . . . . B 
+. . . . . . V . . A 
+. . . . . E . . . . 
+. . . . U . . . . . 
+. . . . . . . M . . 
+. D . . . . . . . . 
+. W . . . . . . . . 
+
+HEROES MOVED
+CATTIE can't move. Dead.
+
+HEROES MOVED
+
+HEROES ATTACKED
+
+MONSTER STATUS
+TROLL HP: 4
+GOBLIN HP: 0
+UNDEAD HP: 0
+VERMIN HP: 2
+MINDFLAYER HP: 7
+REPTILE HP: 0
+ERRTU HP: 14
+
+MAP STATUS
+. T . J . . . . . . 
+. . . . . . . B . . 
+. . . . . . V . . . 
+. . . . . E . . . . 
+. . . D . . . A . . 
+. . . W . . . M . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+
+MONSTERS ATTACKED
+
+HERO STATUS
+DRIZZT HP: 8 XP: 1
+CATTIE HP: 0 XP: 0
+BRUENOR HP: 8 XP: 0
+WULFGAR HP: 12 XP: 0
+ARTEMIS HP: 6 XP: 0
+JARLAXLE HP: 8 XP: 2
+
+MAP STATUS
+. T . J . . . . . . 
+. . . . . . . B . . 
+. . . . . . V . . . 
+. . . . . E . . . . 
+. . . D . . . A . . 
+. . . W . . . M . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+
+HEROES MOVED
+BRUENOR can't move. Place is occupied.
+
+HEROES ATTACKED
+
+MONSTER STATUS
+TROLL HP: 1
+GOBLIN HP: 0
+UNDEAD HP: 0
+VERMIN HP: 1
+MINDFLAYER HP: 4
+REPTILE HP: 0
+ERRTU HP: 7
+
+MAP STATUS
+. T J . . . . . . . 
+. . . . . . . B . . 
+. . . . . . V . . . 
+. . . . D E . . . . 
+. . . . W . . A . . 
+. . . . . . . M . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+
+MONSTERS ATTACKED
+
+HERO STATUS
+DRIZZT HP: 6 XP: 1
+CATTIE HP: 0 XP: 0
+BRUENOR HP: 6 XP: 0
+WULFGAR HP: 10 XP: 0
+ARTEMIS HP: 4 XP: 0
+JARLAXLE HP: 5 XP: 2
+
+MAP STATUS
+. T J . . . . . . . 
+. . . . . . . B . . 
+. . . . . . V . . . 
+. . . . D E . . . . 
+. . . . W . . A . . 
+. . . . . . . M . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+
+HEROES ATTACKED
+
+MONSTER STATUS
+TROLL HP: 0
+GOBLIN HP: 0
+UNDEAD HP: 0
+VERMIN HP: 0
+MINDFLAYER HP: 1
+REPTILE HP: 0
+ERRTU HP: 0
+
+MAP STATUS
+. . J . . . . . . . 
+. . . . . . . B . . 
+. . . . . . . . . . 
+. . . . D . . . . . 
+. . . . W . . A . . 
+. . . . . . . M . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+
+MONSTERS ATTACKED
+
+HERO STATUS
+DRIZZT HP: 6 XP: 1
+CATTIE HP: 0 XP: 0
+BRUENOR HP: 6 XP: 1
+WULFGAR HP: 10 XP: 1
+ARTEMIS HP: 2 XP: 0
+JARLAXLE HP: 5 XP: 3
+
+MAP STATUS
+. . J . . . . . . . 
+. . . . . . . B . . 
+. . . . . . . . . . 
+. . . . D . . . . . 
+. . . . W . . A . . 
+. . . . . . . M . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+
+HEROES ATTACKED
+
+ALL MONSTERS ARE DEAD!

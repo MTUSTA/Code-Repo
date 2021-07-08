@@ -1,3 +1,0 @@
-python3 assignment4.py enc ../folder_x/key.txt ../folder_y/plain_input.txt output_enc.txt
-
-Input file not found error

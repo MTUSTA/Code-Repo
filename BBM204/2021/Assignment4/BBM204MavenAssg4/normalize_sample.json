@@ -1,0 +1,10 @@
+[
+	{
+		"input":"qwerty's QWERTY123 ½$#1",
+		"output":"qwertysqwerty"
+	},
+	{
+		"input":"½$#1",
+		"output":""
+	}
+]

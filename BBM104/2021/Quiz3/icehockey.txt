@@ -1,0 +1,4 @@
+1.	Colorado Avalanche	3	3	0	0	7:3	9
+2.	Vancouver Canucks	3	1	1	1	7:5	4
+3.	Dallas Stars	3	1	0	2	6:7	3
+4.	St. Louis Blues	3	0	1	2	4:9	1

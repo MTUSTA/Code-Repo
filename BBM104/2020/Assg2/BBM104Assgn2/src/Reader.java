@@ -37,7 +37,7 @@ public class Reader {
 			// create object and add arraylist
 			if (split_string[2].compareTo("FACULTY_MEMBER") == 0) {
 				this.personnel.add(new FacultyMember(name_surname[0], name_surname[1], split_string[1], split_string[2],year_start));
-			} else if (split_string[2].compareTo("RESEARCH_ASISTANT") == 0) {
+			} else if (split_string[2].compareTo("RESEARCH_ASSISTANT") == 0) {
 				this.personnel.add(new ResearchAssistant(name_surname[0], name_surname[1], split_string[1],split_string[2], year_start));
 			} else if (split_string[2].compareTo("WORKER") == 0) {
 				this.personnel.add(new Worker(name_surname[0], name_surname[1], split_string[1], split_string[2], year_start));

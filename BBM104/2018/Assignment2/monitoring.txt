@@ -1,0 +1,21 @@
+﻿11234	has	taken	261kcal	from	elma
+***************
+11235	has	taken	196kcal	from	muz
+***************
+11237	has	taken	236kcal	from	kavun
+***************
+11234	has	taken	964kcal	from	kilistava
+***************
+11235	has	taken	1250kcal	from	kuzucevirme
+***************
+ahmet	31	1803kcal	1225kcal	0kcal	-578kcal
+***************
+11235	has	burned	476kcal	thanks	to	basketball
+***************
+11234	has	burned	102kcal	thanks	to	billiards
+***************
+ahmet	31	1803kcal	1225kcal	102kcal	-680kcal
+gizem	32	1393kcal	1446kcal	476kcal	-423kcal
+mehmet	33	1748kcal	236kcal	0kcal	-1512kcal
+***************
+12239	has	taken	64kcal	from	nektarin

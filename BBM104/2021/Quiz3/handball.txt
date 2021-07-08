@@ -1,0 +1,4 @@
+1.	Guneysu	3	2	0	1	64:53	4
+2.	Goztepe	3	2	0	1	75:65	4
+3.	IzmirBB	3	1	1	1	63:75	3
+4.	Nilufer Bld.	3	0	1	2	69:78	1
