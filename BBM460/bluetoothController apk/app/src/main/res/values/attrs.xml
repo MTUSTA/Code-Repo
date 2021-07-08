@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AwesomeToggle">
+        <attr name="active_background_color" format="color"/>
+        <attr name="inactive_background_color" format="color"/>
+        <attr name="inner_toggle_color" format="color"/>
+        <attr name="font_color" format="color"/>
+    </declare-styleable>
+</resources>

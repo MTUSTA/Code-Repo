@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
+
+    <!-- <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On"
+        android:id="@+id/a"
+        android:onClick="sendSignal"
+        android:layout_below="@+id/controllerName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="53dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Off"
+        android:id="@+id/b"
+        android:onClick="sendSignal"
+        android:layout_alignTop="@+id/a"
+        android:layout_toRightOf="@+id/a"
+        android:layout_toEndOf="@+id/a" />
+
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Controller"
+        android:id="@+id/selectBluetoothButton"
+        android:layout_below="@+id/controllerName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="selectFromList" /> -->
+    <TextView
+        android:id="@+id/controllerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/selectBluetoothButton"
+        android:layout_marginTop="31dp"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/selectBluetoothButton"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:fontFamily="serif-monospace"
+        android:onClick="selectFromList"
+        android:text="Select Controller"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <com.suke.widget.SwitchButton
+        android:id="@+id/device1_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/selectBluetoothButton"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="91dp"
+        />
+
+    <com.suke.widget.SwitchButton
+        android:id="@+id/device2_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/device1_toggle"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="30dp"/>
+
+    <com.suke.widget.SwitchButton
+        android:id="@+id/device3_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/device2_toggle"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="30dp" />
+
+    <com.suke.widget.SwitchButton
+        android:id="@+id/device4_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/device3_toggle"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="30dp" />
+
+    <com.suke.widget.SwitchButton
+        android:id="@+id/device_all_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/device4_toggle"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="serif-monospace"
+        android:text="Blutooth Controller"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/device1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/device1_toggle"
+        android:layout_marginEnd="63dp"
+        android:layout_toStartOf="@+id/device1_toggle"
+        android:text="Device 1"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/device2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/device2_toggle"
+        android:layout_marginEnd="63dp"
+        android:layout_toStartOf="@+id/device2_toggle"
+        android:text="Device 2"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/device3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/device3_toggle"
+        android:layout_marginEnd="63dp"
+        android:layout_toStartOf="@+id/device3_toggle"
+        android:text="Device 3"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/device4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/device4_toggle"
+        android:layout_marginEnd="63dp"
+        android:layout_toStartOf="@+id/device4_toggle"
+        android:text="Device 4"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/device_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/device4"
+        android:layout_alignTop="@+id/device_all_toggle"
+        android:text="All Device"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="24sp" />
+</RelativeLayout>
