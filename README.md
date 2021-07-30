@@ -37,7 +37,7 @@
   + BBM371 Data Management
   + BBM382 Software Engineering
   + BBM384 Software Engineering LAB
-    https://github.com/EmreOzkose/ExodiaShop
+    + https://github.com/EmreOzkose/ExodiaShop
   + BBM405 Fundamentals of Artificial Intelligence
   + BBM406 Fundamentals of Machine Learning
   + BBM409 Fundamentals of Machine Learning LAB
