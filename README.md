@@ -60,7 +60,6 @@
   + FRANSIZCA
     + FRANSIZCA 1-2
     + FRANSIZCA 3
-  + KlanlarBotProject
   + MAT123 MAT1
   + MAT124 MAT2
   + SEC555
